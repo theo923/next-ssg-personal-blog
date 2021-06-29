@@ -1,13 +1,14 @@
-// import fs from 'fs';
-// import Link from 'next/link'
 import { shallow, mount, render } from 'enzyme';
 import React from 'react';
-import Home, {getStaticProps} from '../pages';
+import App, {getStaticProps} from '../pages/index';
 
 const mockEmptyProps = async() => {}
+const mockSlug = []
 
 
-it('test for home container', () => {
-  expect(getStaticProps()).toEqual(mockEmptyProps());
+it('should getStaticProps be rendered && allow empty slugs', () => {
+  const props = { slugs: mockSlug };
+  const wrapper = shallow(<App {...props}></App>);
+  expect(wrapper.find(getStaticProps)).toBeTruthy();
 });
 
