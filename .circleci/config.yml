@@ -36,6 +36,6 @@ workflows:
     jobs:
       - build
       - test
-      - coverage
-        requires:
-          - test
+      - coverage:
+          requires:
+            - test
