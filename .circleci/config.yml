@@ -4,27 +4,38 @@ version: 2
 
 jobs:
   build:
-    docker:
-      - image: cimg/node:16.4.0
-    steps:
-      - checkout
-      - run: echo "build project"
-      - run: npm install
-      - run: npm run build
+      docker:
+        - image: cimg/node:16.4.0
+      steps:
+        - checkout
+        - run: echo "build project"
+        - run: npm install
+        - run: npm run build
   test:
-    docker:
-      - image: cimg/node:16.4.0
-    steps:
-      - checkout
-      - run: echo "Running tests"
-      - run: npm install
-      - run: npm test
+      docker:
+        - image: cimg/node:16.4.0
+      steps:
+        - checkout
+        - run: echo "Running tests"
+        - run: npm install
+        - run: npm test
+coverage:
+      docker:
+        - image: cimg/node:16.4.0
+      steps:
+        - checkout
+        - run: echo "Generating Coverage"
+        - run: npm install
+        - run: npm test
 
 
 # Orchestrate our job run sequence
 workflows:
   version: 2
-  build_and_test:
+  build_&_test_&_coverage:
     jobs:
       - build
       - test
+      - coverage
+        requires:
+          - test

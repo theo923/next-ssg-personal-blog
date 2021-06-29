@@ -1,16 +1,30 @@
 
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
-import Navigation, {handleClick} from '../components/Navigation';
+import Navigation from '../components/Navigation';
 
 describe('navigation test', () => {
+    const handleClick = jest.fn()
 
-    it("should call setState with initial values on component mount", () => {
-        const mockSetState = jest.spyOn(React, "useState");
-    
+    it("should rendert Navigation component", () => {
+        expect(shallow(<Navigation />)).toMatchSnapshot();
+    });
+
+    it("expect when rendered dropDownMenu should be closed", () => {
         const wrapper = shallow(<Navigation />);
+        expect(wrapper.state()).toEqual({ dropDownMenu: false })
+    });
     
-        expect(mockSetState).toHaveBeenCalledTimes(1);
+    it("expect when clicked on the toggle menu button dropDownMenu should be expanded", () => {
+        const wrapper = shallow(<Navigation />);
+        wrapper.find('button').simulate('click')
+        expect(wrapper.state()).toEqual({ dropDownMenu: true })
+    });
+
+    it("expect when clicked twice dropDownMenu should be closed", () => {
+        const wrapper = shallow(<Navigation />);
+        wrapper.find('button').simulate('click')
+        expect(wrapper.state()).toEqual({ dropDownMenu: true })
     });
 
 });
