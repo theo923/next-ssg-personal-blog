@@ -8,9 +8,9 @@ const Content = ({item}) => {
                 <div className=''>Image with header</div>
             </div>
             <div className='grid grid-cols-3 justify justify-items-center'>
-                <div className=''>53454354</div>
+                <div className=''>Left Column</div>
                 <div className=''>{item}</div>
-                <div className=''>53454354</div>
+                <div className=''>Right Column</div>
                 
             </div>
         </div>

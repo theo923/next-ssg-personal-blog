@@ -25,7 +25,7 @@ exports[`Content test expect Content component is rendered && match with the Sna
     <div
       className=""
     >
-      53454354
+      Left Column
     </div>
     <div
       className=""
@@ -33,7 +33,7 @@ exports[`Content test expect Content component is rendered && match with the Sna
     <div
       className=""
     >
-      53454354
+      Right Column
     </div>
   </div>
 </div>
