@@ -4,6 +4,15 @@ module.exports = {
       '!**/*.d.ts',
       '!**/node_modules/**',
     ],
+    coveragePathIgnorePatterns: [
+      "node_modules",
+      "<rootDir>/coverage",
+      ".config",
+      "<rootDir>/.next",
+      "<rootDir>/.git",
+      "<rootDir>/src/app/main.ts",
+      "<rootDir>/.circleci"
+  ],
     setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
     testPathIgnorePatterns: ['/node_modules/', '/.next/'],
     transform: {
