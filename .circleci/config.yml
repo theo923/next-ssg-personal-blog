@@ -16,18 +16,11 @@ jobs:
         - image: cimg/node:16.4.0
       steps:
         - checkout
-        - run: echo "Running tests"
+        - run: echo "Running tests & Generate Coverage"
         - run: npm install
-        - run: npm test
-coverage:
-      docker:
-        - image: cimg/node:16.4.0
-      steps:
-        - checkout
-        - run: echo "Generating Coverage"
-        - run: jest --collectCoverage=true
+        - run: npm test --collectCoverage=true
         - store_artifacts:
-            path: coverage
+          path: coverage
 
 
 # Orchestrate our job run sequence
@@ -37,6 +30,3 @@ workflows:
     jobs:
       - build
       - test
-      - coverage:
-          requires:
-            - test
