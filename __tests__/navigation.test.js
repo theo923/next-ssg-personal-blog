@@ -1,13 +1,16 @@
-
 import { shallow } from 'enzyme';
 import React from 'react';
 import Navigation from '../components/Navigation';
 
 describe('navigation test', () => {
-    const handleClick = jest.fn()
 
-    it("should rendert Navigation component", () => {
-        expect(shallow(<Navigation />)).toMatchSnapshot();
+    it("expect Navigation component is rendered without crashing", () => {
+        const wrapper = shallow(<Navigation />);   
+    });
+
+    it("expect Navigation component is rendered && match with the Snapshot", () => {
+        const wrapper = shallow(<Navigation />);   
+        expect(wrapper).toMatchSnapshot();
     });
 
     it("expect when rendered dropDownMenu should be closed", () => {
