@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Layout test expect Layout component is rendered && match with the Snapshot 1`] = `
-<div>
-  <Navigation />
-  <Content />
-</div>
-`;

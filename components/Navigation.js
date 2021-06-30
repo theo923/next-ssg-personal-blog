@@ -12,8 +12,21 @@ class Navigation extends React.Component {
         this.setState(prevState => ({ dropDownMenu: !prevState.dropDownMenu }))
     }
 
+    navGenerator = (name) => {
+        return(
+            <a key={name} href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">{name}</a>
+        )
+    }
+
+    navGeneratorMobi = (name) => {
+        return(
+            <a key={name} href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} className={`${this.state.dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >{name}</a>
+        )
+    }
+
     render() {
         const { dropDownMenu } = this.state;
+        const { navItem } = this.props;
         return (
             <nav className="bg-white shadow dark:bg-gray-800">
                 <div className="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
@@ -34,12 +47,9 @@ class Navigation extends React.Component {
     
                         <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
                             
-                            <a href="#" className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">features</a>
-                            <a href="#" className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">downloads</a>
-                            <a href="#" className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">docs</a>
-                            <a href="#" className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">support</a>
-                            <a href="#" className="hidden lg:block px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">blog</a>
-    
+                            {!navItem ? null :
+                            navItem.map(item => this.navGenerator(item))}
+
                             <div className="hidden lg:block relative mt-4 lg:mt-0 lg:mx-4">
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                     <svg className="w-4 h-4 text-gray-600 dark:text-gray-300" viewBox="0 0 24 24" fill="none">
@@ -49,13 +59,10 @@ class Navigation extends React.Component {
     
                                 <input type="text" className="w-full py-1 pl-10 pr-4 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 dark:placeholder-gray-300 dark:focus:border-gray-300 lg:w-56 lg:border-transparent dark:bg-gray-800 dark:text-gray-300 focus:outline-none focus:border-gray-600" placeholder="Search" />
                             </div>
-    
-                            <a href="#" className={`${dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >features</a>
-                            <a href="#" className={`${dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >downloads</a>
-                            <a href="#" className={`${dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >docs</a>
-                            <a href="#" className={`${dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >support</a>
-                            <a href="#" className={`${dropDownMenu ? null : 'hidden'} lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700`} >blog</a>
-                            
+                               
+                            {!navItem ? null :
+                            navItem.map(item => this.navGeneratorMobi(item))}
+
                             <div className={` ${dropDownMenu ? null : 'hidden'} lg:hidden relative mt-4 lg:mt-0 lg:mx-4`}>
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                     <svg className="w-4 h-4 text-gray-600 dark:text-gray-300" viewBox="0 0 24 24" fill="none">
