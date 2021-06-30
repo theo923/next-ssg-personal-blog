@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content test expect Content component is rendered && match with the Snapshot 1`] = `
+<div
+  className="h-screen"
+>
+  <div
+    className="flex items-center justify-center shadow-lg bg-gradient-to-r from-blue-500 to-blue-600"
+    id="header"
+    style={
+      Object {
+        "height": 600,
+      }
+    }
+  >
+    <div
+      className=""
+    >
+      Image with header
+    </div>
+  </div>
+  <div
+    className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-5 "
+  >
+    <div
+      className="hidden 2xl:block"
+    >
+      Left Column
+    </div>
+    <div
+      className="col-span-2 2xl:col-span-3"
+    >
+      <Body />
+    </div>
+    <div
+      className="justify-self-center "
+    >
+      <AuthorInfo />
+    </div>
+  </div>
+</div>
+`;
