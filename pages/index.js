@@ -4,16 +4,6 @@ import Layout from '../components/Layout';
 
 
 const App = ({slugs}) => {
-  slugs = slugs.map(slug => {
-    return (
-      <div key={slug}>
-        <Link id={slug} href={'/blog/'+ slug}>
-          <a>{'/blog/'+ slug}</a>
-        </Link><br/>
-      </div>
-    )
-  })
-
   return(
     <div>
       <Layout item={slugs}/>
