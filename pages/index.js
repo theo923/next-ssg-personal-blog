@@ -1,25 +1,34 @@
 import fs from 'fs';
-import Link from 'next/link';
+import path from 'path';
+import matter from 'gray-matter';
 import Layout from '../components/Layout';
+import Head from 'next/head';
 
-
-const App = ({slugs}) => {
+const App = ({data, slugs}) => {
   return(
-    <div>
-      <Layout item={slugs}/>
-    </div>
+      <>
+        <Head>
+            <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Josefin+Sans:wght@200&family=Jost:ital,wght@1,300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+            <title>{data ? data.title : null}</title>
+        </Head>
+        <Layout data={data} item={slugs}/>
+      </>
   )
 }
 
-
 export const getStaticProps = async () => {
-  const files = fs.readdirSync('./posts');
-  const slugs = files.map(filename => filename.replace('.md','')).filter(slug => slug.indexOf('.') < 0);
+  const files = fs.readdirSync('posts');
+  const slugs = files.map(filename => filename.replace('.md',''));
+  const readMarkdownFile = files.map(slug => fs.readFileSync(path.join('posts', slug)).toString());
+  const matterMarkdownFile = readMarkdownFile.map(file => matter(file).data);
   return {
     props: {
-      slugs
+      slugs,
+      data: matterMarkdownFile
     }
   }
 }
+
+
 
 export default App;
