@@ -37,7 +37,7 @@ class Navigation extends React.Component {
                     <div className="lg:flex lg:items-center">
                         <div className="flex items-center justify-between">
                             <div>
-                                <div className="font-jost text-2xl font-bold text-gray-800 dark:text-white lg:text-4xl hover:text-gray-700 dark:hover:text-gray-300">
+                                <div className="font-spartan text-2xl font-bold text-gray-800 dark:text-white italic lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
                                     <Link href="/">Theo's Blog</Link>
                                 </div>
                             </div>

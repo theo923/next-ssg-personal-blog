@@ -10,7 +10,7 @@ const AuthorSideBar = () => {
                 <div className="px-6 py-4 ">
                     <h1 className="font-prozaLibre text-2xl font-semibold text-gray-800 dark:text-white">Theo Tam</h1>
 
-                    <p className="font-jost text-lg py-2 text-gray-700 dark:text-gray-400">Coder / Learner / Challenger</p>
+                    <p className="font-spartan italic text-md py-2 text-gray-700 dark:text-gray-400">Coder / Learner / Challenger</p>
                     
 
                     <div className='font-hindSiliguri text-md'>

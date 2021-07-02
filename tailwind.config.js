@@ -19,6 +19,7 @@ module.exports = {
       juliusSansOne: ["'Julius Sans One'", 'sans-serif'],
       prozaLibre: ["'Proza Libre'", 'sans-serif'],
       anaheim: ["'Anaheim'", 'sans-serif'],
+      spartan: ['Spartan', 'sans-serif'],
     }
   }
 }
