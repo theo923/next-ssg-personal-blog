@@ -5,13 +5,13 @@ import Link from 'next/link';
 const Footer = () => {
     return(
         <footer className="flex flex-col items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 sm:flex-row">
-            <div className="font-jost text-2xl font-bold text-gray-800 dark:text-white lg:text-4xl hover:text-gray-700 dark:hover:text-gray-300">
+            <div className="font-spartan italic text-xl font-bold text-gray-800 dark:text-white lg:text-4xl hover:text-gray-700 dark:hover:text-gray-300">
                 <div>
                 <Link href="/">Theo's Blog</Link>
                 </div>
             </div>
 
-            <p className="font-jost text-xl py-2 text-gray-800 dark:text-white sm:py-0">All rights reserved</p>
+            <p className="font-spartan italic text-lg py-2 text-gray-800 dark:text-white sm:py-0">All rights reserved</p>
 
             <div className="flex -mx-2">
                 <div className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit">
