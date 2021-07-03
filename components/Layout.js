@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import Content from './Blog/Content';
 import Footer from './Footer';
 
-const navItem = ['Blog', 'Project', 'About']
+const navItem = ['Blog', 'Project']
 const categories = ['React', 'NextJS', 'JavaScript', 'HTML5', 'CSS', 'Lifestyle', 'Music']
 
 const Layout = ({type, category, data, item, httpString}) => {
