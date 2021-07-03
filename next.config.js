@@ -6,7 +6,4 @@ module.exports = withPWA({
     dest: 'public',
     runtimeCaching,
   },
-  env: {
-    MangoDB_HOST: process.env.MangoDB_HOST,
-  },
 })
