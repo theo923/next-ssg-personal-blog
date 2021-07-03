@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Content from '../components/Blog/Content';
+import Content from '../components/Content';
 
 describe('Content test', () => {
 

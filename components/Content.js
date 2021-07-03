@@ -1,8 +1,9 @@
 import React from 'react';
-import AuthorInfo from './AuthorSideBar';
-import Body from './Body';
-import CategoriesSideBar from './CategoriesSideBar';
-import ProjectInfo from '../Project/ProjectInfo';
+import AuthorInfo from './Blog/AuthorSideBar';
+import Body from './Blog/Body';
+import CategoriesSideBar from './Blog/CategoriesSideBar';
+import ProjectInfo from './Project/ProjectInfo';
+import ContactMe from './Contact/ContactMe';
 
 
 const Content = ({type, category, data, item, httpString, categories}) => {
@@ -20,8 +21,11 @@ const Content = ({type, category, data, item, httpString, categories}) => {
             type === 'project' ? 
                 <div id='header' className='flex items-center justify-center shadow-lg bg-gradient-to-r from-purple-400 to-purple-500'>
                     <ProjectInfo />
-                </div> 
-            : null}
+                </div> : 
+            type === 'contact' ? 
+                <div id='header' className='flex items-center justify-center shadow-lg bg-gradient-to-r from-red-400 to-red-500'>
+                    <ContactMe />
+                </div> : null}
         </div>
 
     )
