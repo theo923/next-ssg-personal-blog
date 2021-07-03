@@ -7,13 +7,14 @@ import Head from 'next/head';
 import Layout from '../../components/Layout'
 
 const Post = ({data, httpString}) => {
+    const type = 'blog';
     return(
         <>
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Spartan:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
-            <title>{data.title}</title>
+            <title>{`${data.title} | Theo's Blog`}</title>
         </Head>
-        <Layout data={data} httpString={httpString}></Layout>
+        <Layout type={type} data={data} httpString={httpString}></Layout>
         </>
     )
 }

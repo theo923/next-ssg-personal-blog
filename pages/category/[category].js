@@ -9,13 +9,14 @@ import Layout from '../../components/Layout';
 const categories = ['React', 'NextJS', 'JavaScript', 'HTML5', 'CSS', 'Lifestyle', 'Music']
 
 const Catergory = ({category, data, slugs}) => {
+    const type = 'blog';
     return(
         <>
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Spartan:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
-            <title>{data.title}</title>
+            <title>{`${category} | Theo's Blog`}</title>
         </Head>
-          <Layout data={data} item={slugs} category={category}/>
+          <Layout type={type} data={data} item={slugs} category={category}/>
           </>
     )
   }

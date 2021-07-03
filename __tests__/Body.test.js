@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Body from '../components/Body';
+import Body from '../components/Blog/Body';
 
 describe('Body test', () => {
 
