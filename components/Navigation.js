@@ -15,7 +15,7 @@ class Navigation extends React.Component {
 
     navGenerator = (name) => {
         return(
-            <div key={name} className="hidden font-prozaLibre lg:block px-2 py-1 mx-2 mt-2 text-md font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 hover:bg-gray-300 ">
+            <div key={name} className="hidden font-prozaLibre lg:block px-2 py-1 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 hover:bg-gray-300 ">
                 <Link  href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} >{name}</Link>
             </div>
         )
@@ -23,8 +23,12 @@ class Navigation extends React.Component {
 
     navGeneratorMobi = (name) => {
         return(
-            <div key={name} className={`${this.state.dropDownMenu ? null : 'hidden'} font-prozaLibre lg:hidden px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 hover:bg-gray-300`}>
-                <Link href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} >{name}</Link>
+            <div key={name}>
+                <Link href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} >
+                    <div className={`${this.state.dropDownMenu ? null : 'hidden'} cursor-pointer font-prozaLibre text-lg lg:hidden px-2 py-2 my-2 font-medium text-gray-700 transition-colors duration-200 transform rounded-md hover:bg-gray-300`}>
+                        {name}
+                    </div>
+                </Link>
             </div>
         )
     }
