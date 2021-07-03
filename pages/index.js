@@ -5,13 +5,14 @@ import Layout from '../components/Layout';
 import Head from 'next/head';
 
 const App = ({data, slugs}) => {
+  const type = 'blog';
   return(
       <>
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Spartan:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
-            <title>{data ? data.title : null}</title>
+            <title>Theo's Blog</title>
         </Head>
-        <Layout data={data} item={slugs}/>
+        <Layout type={type} data={data} item={slugs}/>
       </>
   )
 }

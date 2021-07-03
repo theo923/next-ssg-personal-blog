@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogList from './BlogList';
-import BlogPost from './BlogPost'
+import BlogPost from './BlogPost';
 
 
 const Body = ({category, data, item, httpString}) => {
