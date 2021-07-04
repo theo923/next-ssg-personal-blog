@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 
+
 const Contact = () => {
   const type = 'contact';
   return(

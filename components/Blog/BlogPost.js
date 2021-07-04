@@ -1,8 +1,10 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 const BlogPost = ({ data, httpString }) => {
+    
     return (
         <div className='p-4 md:p-14'>
             <div className='font-prozaLibre text-5xl leading-loose'>{data?.title}</div>
