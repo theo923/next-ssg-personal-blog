@@ -1,11 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
+
 
 
 const AuthorSideBar = () => {
     return (
         <div className='block sticky top-14 overflow-hidden shadow-2xl rounded-lg mt-12 mx-6 mb-6 2xl:ml-3 mr-4 md:mr-6 xl:mr-8' style={{maxHeight: 'calc(100vh - 148px)', flex: '0 100000 250px'}}>
             <div className="max-w-sm mx-auto bg-white md:rounded-lg">
-                <img className="object-cover object-center w-auto h-64" src='../image/profilepic.jpg' alt="avatar" />
+                <Image className="object-cover object-center" height='100' width='100%' layout='responsive' src='/image/profilepic.jpg' alt="avatar" />
                 
                 <div className="px-6 py-4 ">
                     <h1 className="font-prozaLibre text-2xl font-semibold text-gray-800">Theo Tam</h1>

@@ -5,7 +5,7 @@ async function handler(req, res) {
     const {title, email, comment} = req.body.data;
     if(req.method === 'POST') {
         if (title !== '' && email !== '' && comment !== ''){
-            const client = await MongoClient.connect(process.env.MangoDB_HOST,  {useNewUrlParser: true, useUnifiedTopology: true});
+            const client = await MongoClient.connect(process.env.MONGODB,  {useNewUrlParser: true, useUnifiedTopology: true});
             const db = client.db();
             const commentCollection = db.collection('blogcomment');
             const result = await commentCollection.insertOne(req.body.data);

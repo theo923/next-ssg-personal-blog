@@ -4,7 +4,7 @@ import path from 'path';
 import marked from 'marked';
 import matter from 'gray-matter';
 import Head from 'next/head';
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout';
 
 const Post = ({data, httpString}) => {
     const type = 'blog';
@@ -37,6 +37,7 @@ export const getStaticProps = async ({params: {slug}}) => {
     const readMarkdownFile = fs.readFileSync(path.join('posts', slug + '.md')).toString();
     const matterMarkdownFile = matter(readMarkdownFile);
     const httpString = marked(matterMarkdownFile.content);
+    
     return {
         props: {
             httpString,

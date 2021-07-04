@@ -5,7 +5,6 @@ import matter from 'gray-matter';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 
-
 const categories = ['React', 'NextJS', 'JavaScript', 'HTML5', 'CSS', 'Lifestyle', 'Music']
 
 const Catergory = ({category, data, slugs}) => {

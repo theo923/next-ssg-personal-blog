@@ -29,7 +29,6 @@ class ContactMe extends React.Component {
 
     handleChange = e => {
         const {name, value} = e.target;
-        console.log('name value: ',name, value)
         this.setState({[name]:value});
         
     }
