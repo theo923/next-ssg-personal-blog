@@ -12,6 +12,7 @@ const Post = ({data, httpString}) => {
         <>
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Cinzel+Decorative&family=Hind+Siliguri:wght@300&family=Julius+Sans+One&family=Proza+Libre&family=Rajdhani&family=Spartan:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+            <link href='../styles/prism-material-dark.css' rel="stylesheet" />
             <title>{`${data.title} | Theo's Blog`}</title>
         </Head>
         <Layout type={type} data={data} httpString={httpString}></Layout>
@@ -20,7 +21,7 @@ const Post = ({data, httpString}) => {
 }
 
 export const getStaticPaths = async () => {
-    const files = fs.readdirSync('posts');
+    const files = fs.readdirSync('posts').reverse();
     const paths = files.map(filename => ({
         params: {
             slug: filename.replace('.md','')
@@ -34,10 +35,10 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({params: {slug}}) => {
-    const readMarkdownFile = fs.readFileSync(path.join('posts', slug + '.md')).toString();
+    const readMarkdownFile = fs.readFileSync(path.join('posts', slug + '.md'), "utf8").toString();
     const matterMarkdownFile = matter(readMarkdownFile);
     const httpString = marked(matterMarkdownFile.content);
-    
+
     return {
         props: {
             httpString,
