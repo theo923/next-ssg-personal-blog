@@ -42,7 +42,7 @@ const App = ({data, slugs}) => {
 }
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync('posts');
+  const files = fs.readdirSync('posts', "utf8").reverse();
   const slugs = files.map(filename => filename.replace('.md',''));
   const readMarkdownFile = files.map(slug => fs.readFileSync(path.join('posts', slug)).toString());
   const matterMarkdownFile = readMarkdownFile.map(file => matter(file).data);

@@ -1,12 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-jsx';
+
 
 
 const BlogPost = ({ data, httpString }) => {
-    
+
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            Prism.highlightAll(httpString);
+        }
+    }, []);
+
     return (
-        <div className='p-4 md:p-14'>
+        <div className=' md:p-14'>
             <div className='font-prozaLibre text-5xl leading-loose'>{data?.title}</div>
             <div className='font-spartan italic text-lg leading-relaxed'>{data?.description}</div>
             <div className='flex items-center my-4 leading-relaxed'>
@@ -16,7 +25,7 @@ const BlogPost = ({ data, httpString }) => {
             </div>
             <span className="font-spartan text-lg font-light text-gray-600">{data?.date}</span>
             <div className='my-10' style={{left: '5%', right: '5%', width: '90%' , height: '2px', backgroundImage: 'linear-gradient(to right, transparent, rgb(48,49,51), transparent)'}}></div>
-            <div className='font-hindSiliguri pb-96 mb-96 text-2xl leading-relaxed' dangerouslySetInnerHTML={{__html: httpString}}></div>
+            <div className='font-hindSiliguri text-2xl pb-96 mb-96 leading-relaxed' dangerouslySetInnerHTML={{__html: httpString}}></div>
         </div>
         
     )
