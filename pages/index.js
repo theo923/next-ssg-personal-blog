@@ -16,8 +16,8 @@ const App = ({data, slugs}) => {
               name="viewport"
               content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
             />
-            <meta name="description" content="Description" />
-            <meta name="keywords" content="Keywords" />
+            <meta name="description" content="Blog about Theo's coding journey, lifestyle, learning different language and modules( React, NextJS, ExpressJS and others.....)." />
+            <meta name="keywords" content="Theo theo923 blog React" />
 
             <link rel="manifest" href="/manifest.json" />
             <link
