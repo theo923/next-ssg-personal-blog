@@ -19,7 +19,8 @@
     "next": "latest",
     "prismjs": "^1.24.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-youtube": "^7.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

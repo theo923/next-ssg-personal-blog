@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import youtube from 'react-youtube';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-jsx';
 
