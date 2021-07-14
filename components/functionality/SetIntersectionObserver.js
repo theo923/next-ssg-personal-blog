@@ -9,7 +9,6 @@ const SetIntersectionObserver = (props) => {
     React.useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
                 setVisible(entry.isIntersecting);
             })
         })
