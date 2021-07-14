@@ -4,14 +4,22 @@ import Footer from '../components/Footer';
 
 describe('Footer test', () => {
 
+    const setup = (props={}, state=null) => {
+        return shallow(<Footer {...props} />)
+    }
+
+    const findJSXByAttr = (name, wrapper) => {
+        return wrapper.find(`[data-test="${name}"]`)
+    }
+
     it("expect Footer component is rendered without crashing", () => {
-        const wrapper = shallow(<Footer />);   
+        const wrapper = setup();   
     });
 
-    it("expect Footer component is rendered && match with the Snapshot", () => {
-        const wrapper = shallow(<Footer />);   
-        expect(shallow(<Footer />)).toMatchSnapshot();
+    it("expect component-Footer is rendered", () => {
+        const wrapper = setup();   
+        const footer = findJSXByAttr("component-footer", wrapper)
+        expect(footer.length).toBe(1);
     });
     
 });
-

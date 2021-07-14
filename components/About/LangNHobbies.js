@@ -8,7 +8,7 @@ const LangNHobbies = ({forwardRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='pt-20 mx-4 mt-20 lg:mx-20 min-h-screen'>
+            <div ref={forwardRef} className='py-20 mx-4 mt-20 lg:mx-20 min-h-screen'>
                 <div className='grid grid-cols-2 text-center'>
                     
                     <div className='border-r-2 border-gray-700'>

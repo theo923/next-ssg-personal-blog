@@ -9,7 +9,7 @@ const Cover = ({forwardRef, executeScroll, coreProjectsRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='py-20 lg:p-20 mt-16 md:mt-60 mx-4 lg:mx-20 min-h-screen'>
+            <div ref={forwardRef} className='py-20 lg:p-20 my-20 md:mt-60 mx-4 lg:mx-20 min-h-screen'>
                 <div className='flex flex-col items-center justify-center h-full'>
                     <SetIntersectionObserver type={1} direction='down'>
                         <h1 className='font-spartan text-5xl sm:text-6xl mb-4'>Theo Tam</h1>
@@ -18,10 +18,10 @@ const Cover = ({forwardRef, executeScroll, coreProjectsRef}) => {
 
                     <SetIntersectionObserver type={2}  direction='left'>
                     <div className='flex gap-16 mb-8'>
-                        <div><a href='https://github.com/theo923' target='_blank'><FaGithub className='cursor-pointer hover:text-blue-500' size={30} /></a></div>
-                        <div><a href='https://www.linkedin.com/in/theotam923/' target='_blank'><FaLinkedinIn className='cursor-pointer hover:text-blue-500' size={30} /></a></div>
-                        <div><a href='https://twitter.com/TheoTam4' target='_blank'><FaTwitter className='cursor-pointer hover:text-blue-500' size={30} /></a></div>
-                        <div><a href='mailto:theotam923@gmail.com' target='_blank'><FaMailBulk className='cursor-pointer hover:text-blue-500' size={30} /></a></div>
+                        <a href='https://github.com/theo923' target='_blank'><FaGithub className='cursor-pointer hover:text-blue-500' size={30} /></a>
+                        <a href='https://www.linkedin.com/in/theotam923/' target='_blank'><FaLinkedinIn className='cursor-pointer hover:text-blue-500' size={30} /></a>
+                        <a href='https://twitter.com/TheoTam4' target='_blank'><FaTwitter className='cursor-pointer hover:text-blue-500' size={30} /></a>
+                        <a href='mailto:theotam923@gmail.com' target='_blank'><FaMailBulk className='cursor-pointer hover:text-blue-500' size={30} /></a>
                     </div>
                     </SetIntersectionObserver>  
                     
