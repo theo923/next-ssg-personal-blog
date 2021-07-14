@@ -36,7 +36,7 @@ class Navigation extends React.Component {
     render() {
         const { navItem } = this.props;
         return (
-            <nav className="bg-white shadow block sticky top-0 overflow-x-auto overflow-y-auto z-10">
+            <nav className="bg-white shadow fixed w-full top-0 overflow-x-auto overflow-y-auto z-10">
                 <div className="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
                     <div className="lg:flex lg:items-center">
                         <div className="flex items-center justify-between">

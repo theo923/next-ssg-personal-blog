@@ -8,9 +8,8 @@ describe('navigation test', () => {
         const wrapper = shallow(<Navigation />);   
     });
 
-    it("expect Navigation component is rendered && match with the Snapshot", () => {
+    it("expect Navigation component is rendered", () => {
         const wrapper = shallow(<Navigation />);   
-        expect(wrapper).toMatchSnapshot();
     });
 
     it("expect when rendered dropDownMenu should be closed", () => {

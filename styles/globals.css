@@ -133,6 +133,11 @@ body {
   animation: floatWordsLR 2s infinite normal ease-in-out;
 }
 
+.floatRightLeft {
+  position: relative;
+  animation: floatWordsRL 2s infinite normal ease-in-out;
+}
+
 @keyframes floatWords {
   0% {
     transform: translateY(5px);
@@ -158,5 +163,19 @@ body {
 
   100% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes floatWordsRL {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
   }
 }
