@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   width: 100vw;
   overflow-x: hidden;
@@ -17,19 +18,19 @@ html, body {
 }
 
 .fade-in-up {
-  transform: translateY(30vh);
+  transform: translateY(20vh);
 }
 
 .fade-in-down {
-  transform: translateY(-30vh);
+  transform: translateY(-20vh);
 }
 
 .fade-in-left {
-  transform: translateX(30vh);
+  transform: translateX(20vh);
 }
 
 .fade-in-right {
-  transform: translateX(-30vh);
+  transform: translateX(-20vh);
 }
 
 .fade-in-type {
@@ -56,8 +57,106 @@ html, body {
   transition-delay: 1.4s;
 }
 
+.fade-in-type6 {
+  transition-delay: 1.7s;
+}
+
+.fade-in-type7 {
+  transition-delay: 2s;
+}
+
+.fade-in-type8 {
+  transition-delay: 2.3s;
+}
+
+.fade-in-type9 {
+  transition-delay: 2.6s;
+}
+
+.fade-in-type10 {
+  transition-delay: 2.9s;
+}
+
+.fade-in-type11 {
+  transition-delay: 3.2s;
+}
+
+.fade-in-type12 {
+  transition-delay: 3.5s;
+}
+
+.fade-in-type13 {
+  transition-delay: 3.8s;
+}
+
+.fade-in-type14 {
+  transition-delay: 4.1s;
+}
+
+.fade-in-type15 {
+  transition-delay: 4.4s;
+}
+
+.fade-in-type16 {
+  transition-delay: 4.7s;
+}
+
+.fade-in-type17 {
+  transition-delay: 5s;
+}
+
+.fade-in-type18 {
+  transition-delay: 5.3s;
+}
+
+.fade-in-type19 {
+  transition-delay: 5.6s;
+}
+
+.fade-in-type20 {
+  transition-delay: 5.9s;
+}
+
 .is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.floatUpDown {
+  position: relative;
+  animation: floatWords 2s infinite normal ease-in-out;
+}
+
+.floatLeftRight {
+  position: relative;
+  animation: floatWordsLR 2s infinite normal ease-in-out;
+}
+
+@keyframes floatWords {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes floatWordsLR {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
 }

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Link from 'next/link';
 import SetIntersectionObserver from '../functionality/SetIntersectionObserver';
 
 
@@ -7,21 +8,27 @@ const LangNHobbies = ({forwardRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='sticky pt-20 mx-4 lg:mx-20 h-screen'>
-                
+            <div ref={forwardRef} className='pt-20 mx-4 mt-20 lg:mx-20 min-h-screen'>
                 <div className='grid grid-cols-2 text-center'>
-                    <SetIntersectionObserver type={3}  direction='left'>
-                    <div className='font-spartan border-r-2 border-gray-700'>
-                        LANGUAGES
+                    
+                    <div className='border-r-2 border-gray-700'>
+                        <SetIntersectionObserver type={1}  direction='left'><h3 className='font-spartan text-2xl lg:text-5xl mb-20'>LANGUAGES</h3></SetIntersectionObserver>
+                        <SetIntersectionObserver type={2}  direction='left'><p className='font-anaheim text-2xl mb-20'>English</p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={3}  direction='left'><p className='font-anaheim text-2xl mb-20'>Cantonese</p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={4}  direction='left'><p className='font-anaheim text-2xl mb-20'>Japanese</p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={5}  direction='left'><p className='font-anaheim text-2xl mb-20'>Mandarin</p></SetIntersectionObserver>
                     </div>
-                    </SetIntersectionObserver>
-                    <SetIntersectionObserver type={4}  direction='right'>
-                    <div className='font-spartan border-l-2 border-gray-700'>
-                        HOBBIES
+                    
+                    
+                    <div className='border-l-2 border-gray-700'>
+                        <SetIntersectionObserver type={1}  direction='right'><h3 className='font-spartan text-2xl lg:text-5xl mb-20'>HOBBIES</h3></SetIntersectionObserver>
+                        <SetIntersectionObserver type={2}  direction='right'><p className='font-anaheim text-2xl mb-20'>Write <span className='text-blue-400 hover:text-blue-700'><Link href='/'><a target='_blank'>Blog</a></Link></span></p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={3}  direction='right'><p className='font-anaheim text-2xl mb-20'>Listen Tech Podcast (<span className='text-blue-400 hover:text-blue-700'><a href='https://syntax.fm/' target='_blank'>Syntax</a></span>, <span className='text-blue-400 hover:text-blue-700'><a href='https://devchat.tv/show/javascript-jabber/' target='_blank'>JS Jabber</a></span>)</p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={4}  direction='right'><p className='font-anaheim text-2xl mb-20'>Learn new Technology in any criteria (Unity, Unraid OS)</p></SetIntersectionObserver>
+                        <SetIntersectionObserver type={5}  direction='right'><p className='font-anaheim text-2xl mb-20'>Read Tech newsletter (React, JavaScript)</p></SetIntersectionObserver>
                     </div>
-                    </SetIntersectionObserver>
+                    
                 </div>
-                
             </div>
         </>
     )
