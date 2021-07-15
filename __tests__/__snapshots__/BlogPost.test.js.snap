@@ -4,10 +4,10 @@ exports[`BlogPost test expect BlogPost component is rendered && match with the S
 <div
   className=" md:p-14"
 >
-  <div
+  <h1
     className="font-prozaLibre text-5xl leading-loose"
   />
-  <div
+  <h2
     className="font-spartan italic text-lg leading-relaxed"
   />
   <div

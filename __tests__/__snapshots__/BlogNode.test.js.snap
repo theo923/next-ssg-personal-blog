@@ -11,10 +11,10 @@ exports[`BlogNode test expect BlogNode component is rendered && match with the S
       <div
         className="my-2"
       >
-        <p
+        <h2
           className="font-prozaLibre text-2xl font-bold text-gray-700  hover:text-gray-600 "
         />
-        <p
+        <h3
           className="font-spartan italic text-md mt-2 text-gray-500 "
         />
       </div>

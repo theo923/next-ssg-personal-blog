@@ -19,18 +19,18 @@ exports[`ProjectInfo test expect ProjectInfo component is rendered && match with
             target="_blank"
           >
             <div
-              className="p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className=" p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
               <img
                 alt="Netfake - A Netflix main page Clone"
                 className="object-cover object-center h-72 w-full mb-8 rounded-xl"
                 src="./image/Netfake.png"
               />
-              <h1
-                className="font-spartan mx-auto mb-8 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
+              <h2
+                className="font-spartan mx-auto mb-8 h-20 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
               >
                 Netfake - A Netflix main page Clone
-              </h1>
+              </h2>
               <p
                 className=" font-hindSiliguri mx-auto text-lg leading-loose text-blueGray-700 h-64 "
               >
@@ -47,18 +47,18 @@ exports[`ProjectInfo test expect ProjectInfo component is rendered && match with
             target="_blank"
           >
             <div
-              className="p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className=" p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
               <img
                 alt="My Personal Blog"
                 className="object-cover object-center h-72 w-full mb-8 rounded-xl"
                 src="./image/Blog.png"
               />
-              <h1
-                className="font-spartan mx-auto mb-8 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
+              <h2
+                className="font-spartan mx-auto mb-8 h-20 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
               >
                 My Personal Blog
-              </h1>
+              </h2>
               <p
                 className=" font-hindSiliguri mx-auto text-lg leading-loose text-blueGray-700 h-64 "
               >
@@ -75,18 +75,18 @@ exports[`ProjectInfo test expect ProjectInfo component is rendered && match with
             target="_blank"
           >
             <div
-              className="p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className=" p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
               <img
                 alt="React Shopping Mall"
                 className="object-cover object-center h-72 w-full mb-8 rounded-xl"
                 src="./image/ShoppingMall.png"
               />
-              <h1
-                className="font-spartan mx-auto mb-8 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
+              <h2
+                className="font-spartan mx-auto mb-8 h-20 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
               >
                 React Shopping Mall
-              </h1>
+              </h2>
               <p
                 className=" font-hindSiliguri mx-auto text-lg leading-loose text-blueGray-700 h-64 "
               >
@@ -103,18 +103,18 @@ exports[`ProjectInfo test expect ProjectInfo component is rendered && match with
             target="_blank"
           >
             <div
-              className="p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              className=" p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
               <img
                 alt="React Shopping Mall Docker"
                 className="object-cover object-center h-72 w-full mb-8 rounded-xl"
                 src="./image/ShoppingMallDockerImage.png"
               />
-              <h1
-                className="font-spartan mx-auto mb-8 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
+              <h2
+                className="font-spartan mx-auto mb-8 h-20 text-2xl font-semibold leading-normal tracking-tighter text-black title-font"
               >
                 React Shopping Mall Docker
-              </h1>
+              </h2>
               <p
                 className=" font-hindSiliguri mx-auto text-lg leading-loose text-blueGray-700 h-64 "
               >
