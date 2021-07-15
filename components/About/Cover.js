@@ -9,10 +9,10 @@ const Cover = ({forwardRef, executeScroll, coreProjectsRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='py-20 lg:p-20 my-20 md:mt-60 mx-4 lg:mx-20 min-h-screen'>
-                <div className='flex flex-col items-center justify-center h-full'>
+            <div ref={forwardRef} className='pb-20 lg:pb-20 mb-20 mx-4 lg:mx-20 min-h-screen'>
+                <div className='flex flex-col items-center justify-center h-full m-11'>
                     <SetIntersectionObserver type={1} direction='down'>
-                        <h1 className='font-spartan text-5xl sm:text-6xl mb-4'>Theo Tam</h1>
+                        <h1 className='font-spartan text-5xl sm:text-6xl mb-4 mt-60 lg:mt-80'>Theo Tam</h1>
                         <h2 className='font-spartan text-3xl sm:text-4xl mb-4'>React Developer</h2>
                     </SetIntersectionObserver>    
 

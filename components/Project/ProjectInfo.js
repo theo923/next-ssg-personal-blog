@@ -7,9 +7,9 @@ const ProjectInfo = () => {
         return(
             <div className="w-full p-6 mx-auto md:w-1/2 2xl:w-1/3">
                 <a href={link} target='_blank'>
-                    <div className="p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    <div className=" p-6 my-4 lg:p-8 cursor-pointer rounded-xl bg-gray-100 hover:bg-blue-200 shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         <img className="object-cover object-center h-72 w-full mb-8 rounded-xl" src={imgUrl} alt={heading}/>
-                        <h1 className="font-spartan mx-auto mb-8 text-2xl font-semibold leading-normal tracking-tighter text-black title-font">{heading}</h1>
+                        <h2 className="font-spartan mx-auto mb-8 h-20 text-2xl font-semibold leading-normal tracking-tighter text-black title-font">{heading}</h2>
                         <p className=" font-hindSiliguri mx-auto text-lg leading-loose text-blueGray-700 h-64 ">{context}</p>
                     </div>
                 </a>

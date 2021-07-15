@@ -9,7 +9,7 @@ const CategoriesSideBar = ({categories}) => {
                 <Link href={`/category/${tag}`} >
                     <div className="flex items-center my-2 mt-6  bg-white cursor-pointer hover:bg-gray-200 rounded-lg text-gray-700 hover:text-blue-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                        <div className="font-hindSiliguri px-2 text-lg">{tag}</div>
+                        <h2 className="font-hindSiliguri px-2 text-lg">{tag}</h2>
                     </div>
                 </Link>
             </div>

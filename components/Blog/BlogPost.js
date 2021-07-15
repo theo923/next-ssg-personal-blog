@@ -17,8 +17,8 @@ const BlogPost = ({ data, httpString }) => {
 
     return (
         <div className=' md:p-14'>
-            <div className='font-prozaLibre text-5xl leading-loose'>{data?.title}</div>
-            <div className='font-spartan italic text-lg leading-relaxed'>{data?.description}</div>
+            <h1 className='font-prozaLibre text-5xl leading-loose'>{data?.title}</h1>
+            <h2 className='font-spartan italic text-lg leading-relaxed'>{data?.description}</h2>
             <div className='flex items-center my-4 leading-relaxed'>
                 {data?.tags.map(tag => <div key={tag} className="font-spartan italic mr-2 pl-2 py-1 pt-2 pr-3 text-xs font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">
                     <Link href={`/category/${tag}`}>{tag}</Link>

@@ -9,8 +9,8 @@ const BlogNode = ({ data, post }) => {
                 <div className="my-4 w-full px-2 py-4 md:mx-2 bg-white cursor-pointer hover:bg-gray-200 rounded-lg">
 
                     <div className="my-2">
-                        <p className="font-prozaLibre text-2xl font-bold text-gray-700  hover:text-gray-600 ">{data?.title}</p>
-                        <p className="font-spartan italic text-md mt-2 text-gray-500 ">{data?.description}</p>
+                        <h2 className="font-prozaLibre text-2xl font-bold text-gray-700  hover:text-gray-600 ">{data?.title}</h2>
+                        <h3 className="font-spartan italic text-md mt-2 text-gray-500 ">{data?.description}</h3>
                     </div>
                     
                     <div className="flex items-center justify-between">

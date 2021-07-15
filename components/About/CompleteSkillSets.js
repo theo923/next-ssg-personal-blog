@@ -42,9 +42,11 @@ const CompleteSkillSets = ({forwardRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='pt-20 mt-20 lg:mx-20 min-h-screen'>
+            <div ref={forwardRef} className='pt-20 mt-40 lg:mx-20 min-h-screen'>
                 <div className='flex flex-col items-center justify-center mb-12 h-full'>
-                    <h3 className='font-spartan text-5xl my-11 lg:m-28'>Skill Sets</h3>
+                    <SetIntersectionObserver type={1}  direction='down'>
+                    <h3 className='font-spartan text-5xl my-20 lg:m-28'>Skill Sets</h3>
+                    </SetIntersectionObserver>
                     <div className='grid grid-cols-2 justify-items-start items-start text-xl'>
                         {skills ? Object.entries(skills).map(([key, val], idx) => {
                             return SkillsGenerator(key, val, idx)

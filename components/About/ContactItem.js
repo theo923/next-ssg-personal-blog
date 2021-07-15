@@ -9,9 +9,9 @@ const ContactItem = ({forwardRef, executeScroll, coreProjectsRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='pt-20 mx-4 mt-20 lg:mx-20 min-h-screen mb-20'>
+            <div ref={forwardRef} className='py-20 my-20 mx-4 lg:mx-14 min-h-screen'>
                 <div className='flex flex-col justify-items-center items-center'>
-                    <SetIntersectionObserver type={1}  direction='left'><h3 className='font-spartan text-2xl lg:text-5xl mb-20 text-center'>Thank you for visiting my site</h3></SetIntersectionObserver>
+                    <SetIntersectionObserver type={1}  direction='left'><h3 className='font-spartan text-2xl lg:text-5xl mb-20 text-center mt-20'>Thank you for visiting my site</h3></SetIntersectionObserver>
                     <SetIntersectionObserver type={2}  direction='left'><h3 className='font-spartan text-2xl lg:text-5xl mb-20 text-center'>Are you interested in my skills?</h3></SetIntersectionObserver>
                     <SetIntersectionObserver type={3}  direction='left'><h3 className='font-spartan text-2xl lg:text-5xl mb-20 text-center'>Please feel free to contact me</h3></SetIntersectionObserver>
                     <SetIntersectionObserver type={4}  direction='left'>

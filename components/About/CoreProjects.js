@@ -28,8 +28,8 @@ const CoreProjects = ({forwardRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='pt-20 mt-20 mx-4 lg:mx-14 min-h-screen'>
-                <div className='flex flex-col items-center justify-center mb-12 mt-20 h-full'>
+            <section ref={forwardRef} className='py-20 my-20 mx-4 lg:mx-14 min-h-screen'>
+                <div className='flex flex-col items-center justify-center mb-12 h-full'>
                     <SetIntersectionObserver type={1}  direction='down'>
                     <h3 className='font-spartan text-5xl m-11 lg:m-28'>Projects</h3>
                     </SetIntersectionObserver>
@@ -162,7 +162,7 @@ const CoreProjects = ({forwardRef}) => {
                         </SetIntersectionObserver>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
