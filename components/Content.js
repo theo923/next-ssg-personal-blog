@@ -10,9 +10,9 @@ import AboutMe from './About/AboutMe';
 const Content = ({type, category, data, item, httpString, categories}) => {
 
     return (
-        <div className='h-full'>
+        <div data-test="component-app-content" className='h-full'>
             {type === 'blog' ?
-                <div>
+                <section>
                     <div id='header' className='flex items-center justify-center shadow-lg bg-gradient-to-r from-blue-500 to-blue-600' style={{height: 400}}>
                         <p className='m-4 text-2xl font-anaheim text-white flex text-center'>Hello, I am Theo, Welcome to my blog.<br /> I love learning and I will keep sharing what I have learnt everyday.<br /> If you have questions/comments please leave a message on the Contact page</p>
                     </div>
@@ -21,7 +21,7 @@ const Content = ({type, category, data, item, httpString, categories}) => {
                         <div className='2xl:order-2 lg:col-span-2 2xl:col-span-3'><Body category={category} data={data} item={item} httpString={httpString} /></div>
                         <div className='2xl:order-3 justify-self-center '><AuthorInfo /></div>
                     </div>
-                </div> : 
+                </section> : 
             type === 'project' ? 
                 <div id='header' className='flex items-center justify-center shadow-lg bg-gradient-to-r from-purple-400 to-purple-500'>
                     <ProjectInfo />

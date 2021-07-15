@@ -17,7 +17,7 @@ const CategoriesSideBar = ({categories}) => {
     }
 
     return (
-        <div className='block sticky top-14 overflow-hidden' style={{maxHeight: 'calc(100vh - 148px)', flex: '0 100000 250px'}}>
+        <div data-test="component-blog-categoriesSideBar" className='block sticky top-14 overflow-hidden' style={{maxHeight: 'calc(100vh - 148px)', flex: '0 100000 250px'}}>
             <div className='mt-12 mx-6 mb-6 2xl:ml-3 mr-4 md:mr-6 xl:mr-8 shadow-xl'>
                 <div className="py-4 2xl:w-64 bg-white rounded-lg shadow-lg">
                     <h1 className="font-prozaLibre mx-10 lg:mt-10 text-2xl lg:text-3xl font-semibold text-gray-800">Categories</h1>

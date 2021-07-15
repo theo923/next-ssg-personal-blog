@@ -5,13 +5,22 @@ import BlogPost from '../components/Blog/BlogPost';
 describe('BlogPost test', () => {
     const mockBlogPostData = {}
 
+    const setup = (props={}, state=null) => {
+        return shallow(<BlogPost {...props} />)
+    }
+
+    const findJSXByAttr = (name, wrapper) => {
+        return wrapper.find(`[data-test="${name}"]`)
+    }
+
     it("expect BlogPost component is rendered without crashing", () => {
-        const wrapper = shallow(<BlogPost mockBlogPostData={mockBlogPostData} />);   
+        const wrapper = setup(mockBlogPostData, null);   
     });
 
-    it("expect BlogPost component is rendered && match with the Snapshot", () => {
-        const wrapper = shallow(<BlogPost mockBlogPostData={mockBlogPostData} />);   
-        expect(shallow(<BlogPost mockBlogPostData={mockBlogPostData} />)).toMatchSnapshot();
+    it("expect component-blog-BlogPost is rendered", () => {
+        const wrapper = setup(mockBlogPostData, null);   
+        const blogPost = findJSXByAttr("component-blog-blogPost", wrapper)
+        expect(blogPost.length).toBe(1);
     });
     
 });

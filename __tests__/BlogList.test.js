@@ -5,13 +5,22 @@ import BlogList from '../components/Blog/BlogList';
 describe('BlogList test', () => {
     const MockBlogListItem = {}
 
+    const setup = (props={}, state=null) => {
+        return shallow(<BlogList {...props} />)
+    }
+
+    const findJSXByAttr = (name, wrapper) => {
+        return wrapper.find(`[data-test="${name}"]`)
+    }
+
     it("expect BlogList component is rendered without crashing", () => {
-        const wrapper = shallow(<BlogList MockBlogListItem={MockBlogListItem} />);   
+        const wrapper = setup(MockBlogListItem, null);   
     });
 
-    it("expect BlogList component is rendered && match with the Snapshot", () => {
-        const wrapper = shallow(<BlogList MockBlogListItem={MockBlogListItem} />);   
-        expect(shallow(<BlogList />)).toMatchSnapshot();
+    it("expect component-blog-blogList is rendered", () => {
+        const wrapper = setup(MockBlogListItem, null);   
+        const blogList = findJSXByAttr("component-blog-blogList", wrapper)
+        expect(blogList.length).toBe(1);
     });
     
 });
