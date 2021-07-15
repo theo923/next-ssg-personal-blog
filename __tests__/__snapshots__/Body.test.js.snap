@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body test expect Body component is rendered && match with the Snapshot 1`] = `
+<div
+  className="mt-12 mx-4 mb-2 md:mx-8 md:mb-8"
+>
+  <div
+    className="flex flex-col"
+  >
+    <BlogList />
+  </div>
+</div>
+`;

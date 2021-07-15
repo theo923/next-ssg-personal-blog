@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPost test expect BlogPost component is rendered && match with the Snapshot 1`] = `
+<div
+  className=" md:p-14"
+>
+  <div
+    className="font-prozaLibre text-5xl leading-loose"
+  />
+  <div
+    className="font-spartan italic text-lg leading-relaxed"
+  />
+  <div
+    className="flex items-center my-4 leading-relaxed"
+  />
+  <span
+    className="font-spartan text-lg font-light text-gray-600"
+  />
+  <div
+    className="my-10"
+    style={
+      Object {
+        "backgroundImage": "linear-gradient(to right, transparent, rgb(48,49,51), transparent)",
+        "height": "2px",
+        "left": "5%",
+        "right": "5%",
+        "width": "90%",
+      }
+    }
+  />
+  <div
+    className="font-hindSiliguri text-2xl pb-96 mb-96 leading-relaxed"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": undefined,
+      }
+    }
+  />
+</div>
+`;

@@ -15,9 +15,9 @@ class Navigation extends React.Component {
 
     navGenerator = (name) => {
         return(
-            <div key={name} className="hidden font-prozaLibre lg:block px-2 py-1 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 hover:bg-gray-300 ">
+            <h2 key={name} className="hidden font-prozaLibre lg:block px-2 py-1 mx-2 mt-2 text-lg font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 hover:bg-gray-300 ">
                 <Link  href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} >{name}</Link>
-            </div>
+            </h2>
         )
     }
 
@@ -25,9 +25,9 @@ class Navigation extends React.Component {
         return(
             <div key={name}>
                 <Link href={`/${name === 'Blog' ? '' : name.toLowerCase()}`} >
-                    <div className={`${this.state.dropDownMenu ? null : 'hidden'} cursor-pointer font-prozaLibre text-lg lg:hidden px-2 py-2 my-2 font-medium text-gray-700 transition-colors duration-200 transform rounded-md hover:bg-gray-300`}>
+                    <h2 className={`${this.state.dropDownMenu ? null : 'hidden'} cursor-pointer font-prozaLibre text-lg lg:hidden px-2 py-2 my-2 font-medium text-gray-700 transition-colors duration-200 transform rounded-md hover:bg-gray-300`}>
                         {name}
-                    </div>
+                    </h2>
                 </Link>
             </div>
         )
@@ -41,9 +41,9 @@ class Navigation extends React.Component {
                     <div className="lg:flex lg:items-center">
                         <div className="flex items-center justify-between">
                             <div>
-                                <div className="font-spartan text-2xl font-bold text-gray-800 italic lg:text-3xl hover:text-gray-700">
+                                <h1 className="font-spartan text-2xl font-bold text-gray-800 italic lg:text-3xl hover:text-gray-700">
                                     <Link href="/">Theo's Blog</Link>
-                                </div>
+                                </h1>
                             </div>
                             
                             <div className="flex lg:hidden">

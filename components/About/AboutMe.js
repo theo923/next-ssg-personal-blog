@@ -19,37 +19,31 @@ const AboutMe = () => {
     const executeScroll = Ref => Ref.current.scrollIntoView() 
 
     return (
-        <div>
-            
-            <section data-test="component-aboutme" className="flex justify-center min-h-screen">
-
-
-                <div className="container bg-gray-100 rounded-lg shadow-lg 2xl:w-10/12 3xl:w-7/12">
-                <AboutMeSideBar 
-                    coverRef={coverRef} 
-                    coreProjectsRef={coreProjectsRef} 
-                    completeSkillSetsRef={completeSkillSetsRef}
-                    softSkillsRef={softSkillsRef}
-                    langNHobbiesRef={langNHobbiesRef}
-                    contactItemRef={contactItemRef}
-                    executeScroll={executeScroll}
-                />
-                    <Cover forwardRef={coverRef} executeScroll={executeScroll} coreProjectsRef={coreProjectsRef}/>
-                    <div className='mb-56' />
-                    <CoreProjects forwardRef={coreProjectsRef} />
-                    <div className='mb-56' />
-                    <CompleteSkillSets forwardRef={completeSkillSetsRef} />
-                    <div className='mb-56' />
-                    <SoftSkills forwardRef={softSkillsRef} />
-                    <div className='mb-56' />
-                    <LangNHobbies forwardRef={langNHobbiesRef} />
-                    <div className='mb-56' />
-                    <ContactItem forwardRef={contactItemRef} executeScroll={executeScroll} coreProjectsRef={coverRef}/>
-                </div>
-            </section>
-        </div>
+        <section data-test="component-aboutme" className="flex justify-center min-h-screen">
+            <div className="container bg-gray-100 rounded-lg shadow-lg 2xl:w-10/12 3xl:w-7/12">
+            <AboutMeSideBar 
+                coverRef={coverRef} 
+                coreProjectsRef={coreProjectsRef} 
+                completeSkillSetsRef={completeSkillSetsRef}
+                softSkillsRef={softSkillsRef}
+                langNHobbiesRef={langNHobbiesRef}
+                contactItemRef={contactItemRef}
+                executeScroll={executeScroll}
+            />
+                <Cover forwardRef={coverRef} executeScroll={executeScroll} coreProjectsRef={coreProjectsRef}/>
+                <div className='mb-56' />
+                <CoreProjects forwardRef={coreProjectsRef} />
+                <div className='mb-56' />
+                <CompleteSkillSets forwardRef={completeSkillSetsRef} />
+                <div className='mb-56' />
+                <SoftSkills forwardRef={softSkillsRef} />
+                <div className='mb-56' />
+                <LangNHobbies forwardRef={langNHobbiesRef} />
+                <div className='mb-56' />
+                <ContactItem forwardRef={contactItemRef} executeScroll={executeScroll} coreProjectsRef={coverRef}/>
+            </div>
+        </section>
     )
-    
 }
 
 export default AboutMe;

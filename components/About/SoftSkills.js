@@ -8,10 +8,10 @@ const SoftSkills = ({forwardRef}) => {
 
     return (
         <>
-            <div ref={forwardRef} className='py-20 mx-4 mt-20 lg:mx-20 min-h-screen mb-20'>
-                <div className='text-center'>
+            <div ref={forwardRef} className='py-20 my-20 mx-4 lg:mx-14 min-h-screen'>
+                <div className='text-center mb-12 lg:m-28'>
                     <div className='border-gray-700'>
-                        <SetIntersectionObserver type={1}  direction='left'><h3 className='font-spartan text-4xl lg:text-5xl mb-20'>Soft Skills</h3></SetIntersectionObserver>
+                        <SetIntersectionObserver type={1}  direction='down'><h3 className='font-spartan text-4xl lg:text-5xl my-20'>Soft Skills</h3></SetIntersectionObserver>
                         <SetIntersectionObserver type={2}  direction='left'><h3 className='font-spartan text-2xl lg:text-3xl mb-20'>Football Team Member</h3></SetIntersectionObserver>
                         <SetIntersectionObserver type={3}  direction='right'>
                             <p className='font-anaheim text-lg text-center mb-12 mx-9 xl:mx-40'>I was playing football when I was studying in secondary school. Instead of precious football memories, there are some technical softskills that I think they could benefit me a lot when working as a team.</p>
