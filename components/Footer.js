@@ -5,7 +5,7 @@ import { FaGithub, FaTwitter, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 
 const Footer = () => {
     return(
-        <footer data-test="component-footer" className="flex flex-col items-center justify-between px-6 py-4 bg-white  sm:flex-row">
+        <footer data-test="component-app-footer" className="flex flex-col items-center justify-between px-6 py-4 bg-white  sm:flex-row">
             <div className="font-spartan italic text-xl font-bold text-gray-800 lg:text-4xl hover:text-gray-700 ">
                 <h1>
                 <Link href="/">Theo's Blog</Link>

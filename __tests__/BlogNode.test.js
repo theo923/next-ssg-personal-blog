@@ -3,16 +3,25 @@ import React from 'react';
 import BlogNode from '../components/Blog/BlogNode';
 
 describe('BlogNode test', () => {
-    const mockBlogNodeData = {}
+    const mockPost = "";
+    const mockData = {};
+
+    const setup = (props={}, state=null) => {
+        return shallow(<BlogNode {...props} />)
+    }
+
+    const findJSXByAttr = (name, wrapper) => {
+        return wrapper.find(`[data-test="${name}"]`)
+    }
 
     it("expect BlogNode component is rendered without crashing", () => {
-        const wrapper = shallow(<BlogNode mockBlogNodeData={mockBlogNodeData} />);   
+        const wrapper = setup((mockPost, mockData), null);   
     });
 
-    it("expect BlogNode component is rendered && match with the Snapshot", () => {
-        const wrapper = shallow(<BlogNode mockBlogNodeData={mockBlogNodeData} />);   
-        expect(shallow(<BlogNode mockBlogNodeData={mockBlogNodeData} />)).toMatchSnapshot();
+    it("expect component-blog-BlogNode is rendered", () => {
+        const wrapper = setup((mockPost, mockData), null);   
+        const blogNode = findJSXByAttr("component-blog-blogNode", wrapper)
+        expect(blogNode.length).toBe(1);
     });
     
 });
-

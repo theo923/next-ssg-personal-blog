@@ -16,7 +16,7 @@ describe('AboutMeSideBar test', () => {
         const wrapper = setup();   
     });
 
-    it("expect component-AboutMeSideBar is rendered", () => {
+    it("expect component-aboutMeSideBar is rendered", () => {
         const wrapper = setup();   
         const aboutMeSideBar = findJSXByAttr("component-aboutMeSideBar", wrapper)
         expect(aboutMeSideBar.length).toBe(1);

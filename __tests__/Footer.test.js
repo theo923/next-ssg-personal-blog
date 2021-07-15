@@ -16,9 +16,9 @@ describe('Footer test', () => {
         const wrapper = setup();   
     });
 
-    it("expect component-Footer is rendered", () => {
+    it("expect component-app-footer is rendered", () => {
         const wrapper = setup();   
-        const footer = findJSXByAttr("component-footer", wrapper)
+        const footer = findJSXByAttr("component-app-footer", wrapper)
         expect(footer.length).toBe(1);
     });
     

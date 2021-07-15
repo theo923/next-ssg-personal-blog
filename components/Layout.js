@@ -8,7 +8,7 @@ const categories = ['React', 'NextJS', 'JavaScript', 'HTML5', 'CSS', 'Lifestyle'
 
 const Layout = ({type, category, data, item, httpString}) => {
     return (
-        <div>
+        <div data-test="component-app-layout">
             <Navigation navItem={navItem} />
             <Content type={type} category={category} data={data} item={item} httpString={httpString} categories={categories} />
             <Footer />

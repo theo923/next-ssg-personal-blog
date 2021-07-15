@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const BlogNode = ({ data, post }) => {
     return (
-        <div>
+        <div data-test="component-blog-blogNode">
             <Link id={post} href={'/blog/'+ post}>
                 <div className="my-4 w-full px-2 py-4 md:mx-2 bg-white cursor-pointer hover:bg-gray-200 rounded-lg">
 
