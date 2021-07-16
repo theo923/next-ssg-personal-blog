@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import AuthorSideBar from '../components/Blog/AuthorSideBar';
+import AuthorSideBar from '../../components/Blog/AuthorSideBar';
 
 describe('AuthorSideBar test', () => {
 

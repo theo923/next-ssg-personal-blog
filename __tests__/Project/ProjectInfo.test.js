@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import ProjectInfo from '../components/Project/ProjectInfo';
+import ProjectInfo from '../../components/Project/ProjectInfo';
 
 describe('ProjectInfo test', () => {
 

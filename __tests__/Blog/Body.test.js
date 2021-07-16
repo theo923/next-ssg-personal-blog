@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Body from '../components/Blog/Body';
+import Body from '../../components/Blog/Body';
 
 describe('Body test', () => {
     const mockBodyData = {}
@@ -17,7 +17,7 @@ describe('Body test', () => {
         const wrapper = setup(mockBodyData, null);   
     });
 
-    it("expect component-blog-Body is rendered", () => {
+    it("expect component-blog-body is rendered", () => {
         const wrapper = setup(mockBodyData, null);   
         const body = findJSXByAttr("component-blog-body", wrapper)
         expect(body.length).toBe(1);
