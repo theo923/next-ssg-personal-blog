@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import AboutMeSideBar from '../components/About/AboutMeSideBar';
+import AboutMeSideBar from '../../components/About/AboutMeSideBar';
 
 describe('AboutMeSideBar test', () => {
 

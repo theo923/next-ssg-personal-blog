@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import BlogNode from '../components/Blog/BlogNode';
+import BlogNode from '../../components/Blog/BlogNode';
 
 describe('BlogNode test', () => {
     const mockPost = "";
@@ -18,7 +18,7 @@ describe('BlogNode test', () => {
         const wrapper = setup((mockPost, mockData), null);   
     });
 
-    it("expect component-blog-BlogNode is rendered", () => {
+    it("expect component-blog-blogNode is rendered", () => {
         const wrapper = setup((mockPost, mockData), null);   
         const blogNode = findJSXByAttr("component-blog-blogNode", wrapper)
         expect(blogNode.length).toBe(1);

@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import ContactMe from '../components/Contact/ContactMe';
+import ContactMe from '../../components/Contact/ContactMe';
 
 describe('ContactMe test', () => {
     const setup = (props={}, state=null) => {
