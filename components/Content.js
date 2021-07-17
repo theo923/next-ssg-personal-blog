@@ -1,10 +1,12 @@
 import React from 'react';
-import AuthorInfo from './Blog/AuthorSideBar';
-import Body from './Blog/Body';
-import CategoriesSideBar from './Blog/CategoriesSideBar';
-import ProjectInfo from './Project/ProjectInfo';
-import ContactMe from './Contact/ContactMe';
-import AboutMe from './About/AboutMe';
+import dynamic from 'next/dynamic';
+const AuthorInfo = dynamic(() => import('./Blog/AuthorSideBar'));
+const Body = dynamic(() => import('./Blog/Body'));
+const CategoriesSideBar = dynamic(() => import('./Blog/CategoriesSideBar'));
+const ProjectInfo = dynamic(() => import('./Project/ProjectInfo'));
+const ContactMe = dynamic(() => import('./Contact/ContactMe'));
+const AboutMe = dynamic(() => import('./About/AboutMe'));
+
 
 
 const Content = ({type, category, data, item, httpString, categories}) => {

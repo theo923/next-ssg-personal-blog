@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogList from './BlogList';
-import BlogPost from './BlogPost';
+import dynamic from 'next/dynamic';
+const BlogPost = dynamic(() => import('./BlogPost'));
 
 
 const Body = ({category, data, item, httpString}) => {

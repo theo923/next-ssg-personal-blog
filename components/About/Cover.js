@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SetIntersectionObserver from '../functionality/SetIntersectionObserver';
 import { FaGithub, FaTwitter, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
