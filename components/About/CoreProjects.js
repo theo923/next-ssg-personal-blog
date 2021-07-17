@@ -7,9 +7,6 @@ import Link from 'next/link';
 
 const CoreProjects = ({forwardRef}) => {
     const [imageInterval, setImageInterval] = React.useState(1)
-    const [project0001Gif, setProject0001Gif] = React.useState(false)
-    const [project0002Gif, setProject0002Gif] = React.useState(false)
-    const [project0003Gif, setProject0003Gif] = React.useState(false)
 
     React.useEffect(() => {
         const id = setTimeout(() => {
