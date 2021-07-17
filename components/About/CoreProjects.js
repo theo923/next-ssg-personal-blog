@@ -24,7 +24,7 @@ const CoreProjects = ({forwardRef}) => {
     const frameworkNlibrary = (item, num, direction) => <SetIntersectionObserver key={num} type={num} direction={direction}><span className='flex justify-items-center items-center'><FaStar className="text-yellow-500 mr-2" size={13} />{item}</span></SetIntersectionObserver>;
     const sitefunction = (item, num, direction) => <SetIntersectionObserver key={num} type={num} direction={direction}><span className='flex justify-items-center items-center'><FaCheck className="text-green-500 mr-2" size={13} />{item}</span></SetIntersectionObserver>;
     const promptToHover = () => <span className='font-anaheim m-4 floatUpDown flex justify-items-center items-center'><FaAngleDoubleUp className="text-green-500 mr-2" size={13} />Try to hover it!</span>
-    const showBox = (proj, gif, setGif) => <Image className='blur-sm hover:blur-none' layout='fill' src={gif ? `/about/${proj}-000${imageInterval}.gif` : `/about/${proj}-0000.png`} onMouseOver={() => setGif(true)} onMouseLeave={() => setGif(false)} />
+    const showBox = (proj) => <Image className='blur-sm hover:blur-none' layout='fill' src={`/about/${proj}-000${imageInterval}.gif`}/>
 
     return (
         <>
@@ -59,7 +59,7 @@ const CoreProjects = ({forwardRef}) => {
                                         }
                                     </div>
                             </div>
-                            <div className='order-3 lg:order-2 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0001', project0001Gif, setProject0001Gif)}</div>
+                            <div className='order-3 lg:order-2 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0001')}</div>
                              <div className='order-2 lg:order-3'>
                                 <span className='flex justify-items-center items-center mt-10'>
                                     <button className='mr-2'><a href='https://github.com/theo923/next-ssg-personal-blog' target='_blank'><FaGithub className='cursor-pointer hover:text-blue-500' size={30}></FaGithub></a></button>
@@ -98,7 +98,7 @@ const CoreProjects = ({forwardRef}) => {
                                         }
                                     </div>
                             </div>
-                            <div className='order-3 lg:order-1 mr-10 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0002', project0002Gif, setProject0002Gif)}</div>
+                            <div className='order-3 lg:order-1 mr-10 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0002')}</div>
                             <div className='order-2 lg:order-4'>
                                 <span className='flex flex-row-reverse justify-items-center items-center mt-10'>
                                     <button className='mr-2'><a href='https://github.com/theo923/netfake' target='_blank'><FaGithub className='cursor-pointer hover:text-blue-500' size={30}></FaGithub></a></button>
@@ -138,7 +138,7 @@ const CoreProjects = ({forwardRef}) => {
                                         }
                                     </div>
                             </div>
-                            <div className='order-3 lg:order-2 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0003', project0003Gif, setProject0003Gif)}</div>
+                            <div className='order-3 lg:order-2 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0003')}</div>
                             <div className='order-2 lg:order-3'>
                                 <span className='flex justify-items-center items-center mt-10'>
                                     <button className='mr-2'><a href='https://github.com/theo923/React_Shopping_Mall' target='_blank'><FaGithub className='cursor-pointer hover:text-blue-500' size={30}></FaGithub></a></button>
