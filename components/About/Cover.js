@@ -5,14 +5,13 @@ import Link from 'next/link';
 
 
 const Cover = ({forwardRef, executeScroll, coreProjectsRef}) => {
-
     return (
         <>
             <div ref={forwardRef} className='pb-20 lg:pb-20 mb-20 mx-4 lg:mx-20 min-h-screen'>
                 <div className='flex flex-col items-center justify-center h-full m-11'>
                     <SetIntersectionObserver type={1} direction='down'>
-                        <h1 className='font-spartan text-5xl sm:text-6xl mb-4 mt-60 lg:mt-80'>Theo Tam</h1>
-                        <h2 className='font-spartan text-3xl sm:text-4xl mb-4'>React Developer</h2>
+                        <h1 className='font-spartan text-center text-5xl sm:text-6xl mb-4 mt-60 lg:mt-80'>Theo Tam</h1>
+                        <h2 className='font-spartan text-center text-2xl sm:text-4xl mb-4'>React Developer</h2>
                     </SetIntersectionObserver>    
 
                     <SetIntersectionObserver type={2}  direction='left'>
@@ -25,7 +24,7 @@ const Cover = ({forwardRef, executeScroll, coreProjectsRef}) => {
                     </SetIntersectionObserver>  
                     
                     <SetIntersectionObserver type={3}  direction='right'>
-                    <p className='font-anaheim text-lg text-center mb-12 mx-9 xl:mx-40'>A React Developer based in UK with <span className=' p-0.5 bg-red-200'>3 years</span> of experiences in programming. Actively on Github <span className=' p-0.5 bg-red-200'>every day</span> with above <span className=' p-0.5 bg-red-200'>250+</span> contributions this year. Created more than <span className=' p-0.5 bg-red-200'>5+</span> projects within 2 months. Keep learning and writing Blog post <span className=' p-0.5 bg-red-200'>every day</span>.</p>
+                    <p className='font-anaheim text-lg text-center mb-12 mx-9 xl:mx-40'>A React Developer based in UK with <span className=' p-0.5 bg-red-200'>3 years</span> of experiences in programming. Actively on Github <span className=' p-0.5 bg-red-200'>every day</span> with above <span className=' p-0.5 bg-red-200'>300+</span> contributions this year. Created more than <span className=' p-0.5 bg-red-200'>5+</span> projects within 2 months. Keep learning and writing Blog post <span className=' p-0.5 bg-red-200'>every day</span>.</p>
                     </SetIntersectionObserver>
                     <div className='font-anaheim grid grid-cols-2 mb-4 justify-items-center items-center gap-16'>
                         <SetIntersectionObserver type={4}  direction='left'>

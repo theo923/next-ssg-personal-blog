@@ -16,7 +16,7 @@ const BlogPost = ({ data, httpString }) => {
     }, []);
 
     return (
-        <div data-test="component-blog-blogPost" className=' md:p-14'>
+        <article data-test="component-blog-blogPost" className=' md:p-14'>
             <h1 className='font-prozaLibre text-5xl leading-loose'>{data?.title}</h1>
             <h2 className='font-spartan italic text-lg leading-relaxed'>{data?.description}</h2>
             <div className='flex items-center my-4 leading-relaxed'>
@@ -25,12 +25,12 @@ const BlogPost = ({ data, httpString }) => {
                 </div>)}
             </div>
             <span className="font-spartan text-lg font-light text-gray-600">{data?.date}</span>
-            <div className='my-10' style={{left: '5%', right: '5%', width: '90%' , height: '2px', backgroundImage: 'linear-gradient(to right, transparent, rgb(48,49,51), transparent)'}}></div>
-            <div className='font-hindSiliguri text-2xl pb-96 mb-96 leading-relaxed' dangerouslySetInnerHTML={{__html: httpString}}></div>
-        </div>
-        
+            <div className='my-10' style={{ left: '5%', right: '5%', width: '90%', height: '2px', backgroundImage: 'linear-gradient(to right, transparent, rgb(48,49,51), transparent)' }}></div>
+            <div className='font-hindSiliguri text-2xl pb-96 mb-96 leading-relaxed' dangerouslySetInnerHTML={{ __html: httpString }}></div>
+        </article>
+
     )
-    
+
 }
 
 export default BlogPost;
