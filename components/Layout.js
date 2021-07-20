@@ -4,9 +4,9 @@ import Content from './Content';
 import Footer from './Footer';
 
 const navItem = ['About', 'Blog', 'Project', 'Contact']
-const categories = ['React', 'NextJS', 'JavaScript', 'HTML5', 'CSS', 'Lifestyle', 'Music']
+const categories = ['React', 'NextJS', 'Python', 'Lifestyle', 'Music']
 
-const Layout = ({type, category, data, item, httpString}) => {
+const Layout = ({ type, category, data, item, httpString }) => {
     return (
         <div data-test="component-app-layout">
             <Navigation navItem={navItem} />
@@ -14,7 +14,7 @@ const Layout = ({type, category, data, item, httpString}) => {
             <Footer />
         </div>
     )
-    
+
 }
 
 export default Layout;
