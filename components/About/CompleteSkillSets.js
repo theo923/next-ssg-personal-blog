@@ -43,7 +43,7 @@ const CompleteSkillSets = ({ forwardRef }) => {
 
     return (
         <>
-            <div ref={forwardRef} className='pt-20 mt-40 lg:mx-20 min-h-screen'>
+            <div data-test="component-completeSkillSets" ref={forwardRef} className='pt-20 mt-40 lg:mx-20 min-h-screen'>
                 <div className='flex flex-col items-center justify-center mb-12 h-full'>
                     <SetIntersectionObserver type={1} direction='down'>
                         <h3 className='font-spartan text-5xl my-20 lg:m-28'>Skill Sets</h3>

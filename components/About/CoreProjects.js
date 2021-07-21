@@ -25,7 +25,7 @@ const CoreProjects = ({ forwardRef }) => {
 
     return (
         <>
-            <section ref={forwardRef} className='py-20 my-20 mx-4 lg:mx-14 min-h-screen'>
+            <section data-test="component-coreProjects" ref={forwardRef} className='py-20 my-20 mx-4 lg:mx-14 min-h-screen'>
                 <div className='flex flex-col items-center justify-center mb-12 h-full'>
                     <SetIntersectionObserver type={1} direction='down'>
                         <h3 className='font-spartan text-5xl m-11 lg:m-28'>Projects</h3>
