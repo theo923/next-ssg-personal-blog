@@ -9,6 +9,7 @@ const CompleteSkillSets = ({ forwardRef }) => {
     const skills = {
         'React': true,
         'NextJS': true,
+		'Serverless': true,
         'ExpressJS': true,
         'TypeScript': true,
         'TailwindCSS': true,
