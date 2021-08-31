@@ -30,7 +30,42 @@ const CoreProjects = ({ forwardRef }) => {
                     <SetIntersectionObserver type={1} direction='down'>
                         <h3 className='font-spartan text-5xl m-11 lg:m-28'>Projects</h3>
                     </SetIntersectionObserver>
-                    <div className='grid grid-rows-3 lg:w-3/4 gap-96'>
+                    <div className='grid grid-rows-4 lg:w-3/4 gap-96'>
+
+                        <SetIntersectionObserver type={2} direction='right'>
+                            <div className='grid grid-cols-1 lg:grid-cols-2'>
+                                <div className='order-1 lg:order-2 lg:mr-20'>
+                                    <div className='font-spartan text-2xl md:text-4xl'>hkxjpbuyer (Freelance Project)</div>
+                                    <SetIntersectionObserver type={3} direction='right'>
+                                        <div className='font-anaheim text-xl '>A commercial online shopping site serving customers from Hong Kong, Taiwan and United Kingdom for Japanese anime goods.</div>
+                                    </SetIntersectionObserver>
+                                    <div className='grid md:grid-cols-2 font-anaheim gap-1'>
+                                        <div className='md:col-span-2 text-lg text-blue-800 font-bold'>Frameworks, Libraries & Techniques Used:</div>
+                                        {['React & Redux', 'NextJS', 'TypeScript', 'Server-Sided Rendering', 'Serverless Functions', 'TailwindCSS', 'AWS RDS PostgreSQL (Database)', 'Agile (accerlerate development)', 'CI/CD (Long-Term Maintenance)', 'Prisma (ORM for connection pooling)', 'Jest & Enzyme (TDD)', 'React Router & Next Link', 'I18n (Locales)', 'Framer Motion (Animation)', 'JWT & Bcrypt (Encryption)', 'And more...']
+                                            .map((item, idx) => {
+                                                return frameworkNlibrary(item, idx, 'right')
+                                            })
+                                        }
+                                    </div>
+                                    <div className='font-anaheim gap-1'>
+                                        <div className='text-lg text-red-800 font-bold'>Functions:</div>
+                                        {['Receive products from database through Server-Sided Rendering', 'Handle adding, deleting & updating shopping cart (Redux store)', 'Create order with Serverless Functions & Send it to AWS RDS PostgreSQL', 'User passwords & information encryted by JWT & Bcrypt', 'Order Tracking for each orders', 'Provide browsing with both Chinese & English Languages']
+                                            .map((item, idx) => {
+                                                return sitefunction(item, idx, 'right')
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                                <div className='order-3 lg:order-1 mr-10 relative my-4 lg:my-0 h-64 w-auto lg:h-auto rounded-xl border-8 border-solid border-gray-300 '>{showBox('0000')}</div>
+                                <div className='order-2 lg:order-4'>
+                                    <span className='flex flex-row-reverse justify-items-center items-center mb-5'>
+                                        <button className='mr-2'><a href='https://hkxjpbuyer-online-shop-real.vercel.app/en' target='_blank'><FaRegWindowMaximize className='cursor-pointer hover:text-blue-500' size={30}></FaRegWindowMaximize></a></button>
+                                        <span className='font-anaheim m-4 floatLeftRight flex justify-items-center items-center'> Demo Site <FaAngleDoubleRight className='ml-2 cursor-pointer text-green-500' size={20}></FaAngleDoubleRight></span>
+                                    </span>
+                                </div>
+                                <div className='order-4 lg:order-3'>{promptToHover()}</div>
+                            </div>
+                        </SetIntersectionObserver>
 
                         <SetIntersectionObserver type={2} direction='left'>
                             <div className='grid grid-cols-1 lg:grid-cols-2'>
