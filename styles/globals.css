@@ -1,174 +1,186 @@
 .scroll-hidden::-webkit-scrollbar {
-  height: 0px;
-  background: transparent; /* make scrollbar transparent */
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 .fade-in-section {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.6s ease-in-out, transform 1.2s ease-in-out;
-  will-change: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in-out, transform 1.2s ease-in-out;
+    will-change: opacity, visibility;
 }
 
 .fade-in-up {
-  transform: translateY(20vh);
+    transform: translateY(20vh);
 }
 
 .fade-in-down {
-  transform: translateY(-20vh);
+    transform: translateY(-20vh);
 }
 
 .fade-in-left {
-  transform: translateX(20vh);
+    transform: translateX(20vh);
 }
 
 .fade-in-right {
-  transform: translateX(-20vh);
+    transform: translateX(-20vh);
 }
 
 .fade-in-type {
-  transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .fade-in-type1 {
-  transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .fade-in-type2 {
-  transition-delay: 0.3s;
+    transition-delay: 0.3s;
 }
 
 .fade-in-type3 {
-  transition-delay: 0.8s;
+    transition-delay: 0.8s;
 }
 
 .fade-in-type4 {
-  transition-delay: 1.1s;
+    transition-delay: 1.1s;
 }
 
 .fade-in-type5 {
-  transition-delay: 1.4s;
+    transition-delay: 1.4s;
 }
 
 .fade-in-type6 {
-  transition-delay: 1.7s;
+    transition-delay: 1.7s;
 }
 
 .fade-in-type7 {
-  transition-delay: 2s;
+    transition-delay: 2s;
 }
 
 .fade-in-type8 {
-  transition-delay: 2.3s;
+    transition-delay: 2.3s;
 }
 
 .fade-in-type9 {
-  transition-delay: 2.6s;
+    transition-delay: 2.6s;
 }
 
 .fade-in-type10 {
-  transition-delay: 2.9s;
+    transition-delay: 2.9s;
 }
 
 .fade-in-type11 {
-  transition-delay: 3.2s;
+    transition-delay: 3.2s;
 }
 
 .fade-in-type12 {
-  transition-delay: 3.5s;
+    transition-delay: 3.5s;
 }
 
 .fade-in-type13 {
-  transition-delay: 3.8s;
+    transition-delay: 3.8s;
 }
 
 .fade-in-type14 {
-  transition-delay: 4.1s;
+    transition-delay: 4.1s;
 }
 
 .fade-in-type15 {
-  transition-delay: 4.4s;
+    transition-delay: 4.4s;
 }
 
 .fade-in-type16 {
-  transition-delay: 4.7s;
+    transition-delay: 4.7s;
 }
 
 .fade-in-type17 {
-  transition-delay: 5s;
+    transition-delay: 5s;
 }
 
 .fade-in-type18 {
-  transition-delay: 5.3s;
+    transition-delay: 5.3s;
 }
 
 .fade-in-type19 {
-  transition-delay: 5.6s;
+    transition-delay: 5.6s;
 }
 
 .fade-in-type20 {
-  transition-delay: 5.9s;
+    transition-delay: 5.9s;
+}
+
+.fade-in-type21 {
+    transition-delay: 6.2s;
+}
+
+.fade-in-type22 {
+    transition-delay: 6.5s;
+}
+
+.fade-in-type23 {
+    transition-delay: 6.8s;
 }
 
 .is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 
 .floatUpDown {
-  position: relative;
-  animation: floatWords 2s infinite normal ease-in-out;
+    position: relative;
+    animation: floatWords 2s infinite normal ease-in-out;
 }
 
 .floatLeftRight {
-  position: relative;
-  animation: floatWordsLR 2s infinite normal ease-in-out;
+    position: relative;
+    animation: floatWordsLR 2s infinite normal ease-in-out;
 }
 
 .floatRightLeft {
-  position: relative;
-  animation: floatWordsRL 2s infinite normal ease-in-out;
+    position: relative;
+    animation: floatWordsRL 2s infinite normal ease-in-out;
 }
 
 @keyframes floatWords {
-  0% {
-    transform: translateY(5px);
-  }
+    0% {
+        transform: translateY(5px);
+    }
 
-  50% {
-    transform: translateY(-5px);
-  }
+    50% {
+        transform: translateY(-5px);
+    }
 
-  100% {
-    transform: translateY(5px);
-  }
+    100% {
+        transform: translateY(5px);
+    }
 }
 
 @keyframes floatWordsLR {
-  0% {
-    transform: translateX(10px);
-  }
+    0% {
+        transform: translateX(10px);
+    }
 
-  50% {
-    transform: translateX(-10px);
-  }
+    50% {
+        transform: translateX(-10px);
+    }
 
-  100% {
-    transform: translateX(10px);
-  }
+    100% {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes floatWordsRL {
-  0% {
-    transform: translateX(-10px);
-  }
+    0% {
+        transform: translateX(-10px);
+    }
 
-  50% {
-    transform: translateX(10px);
-  }
+    50% {
+        transform: translateX(10px);
+    }
 
-  100% {
-    transform: translateX(-10px);
-  }
+    100% {
+        transform: translateX(-10px);
+    }
 }

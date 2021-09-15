@@ -47,7 +47,7 @@ const LangNHobbies = ({ forwardRef }) => {
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={2} direction="right">
                             <p className="font-anaheim text-2xl mb-20">
-                                Write{" "}
+                                Writing{" "}
                                 <span className="text-blue-400 hover:text-blue-700">
                                     <Link href="/">
                                         <a target="_blank">Blog</a>
@@ -57,7 +57,7 @@ const LangNHobbies = ({ forwardRef }) => {
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={3} direction="right">
                             <p className="font-anaheim text-2xl mb-20">
-                                Listen Tech Podcast (
+                                Listening to tech podcast (
                                 <span className="text-blue-400 hover:text-blue-700">
                                     <a
                                         href="https://syntax.fm/"
@@ -80,13 +80,13 @@ const LangNHobbies = ({ forwardRef }) => {
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={4} direction="right">
                             <p className="font-anaheim text-2xl mb-20">
-                                Learn new Technology in any criteria (Unity,
+                                Learning new Technology in any criteria (Unity,
                                 Unraid OS)
                             </p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={5} direction="right">
                             <p className="font-anaheim text-2xl mb-20">
-                                Read Tech newsletter (React, JavaScript)
+                                Reading Tech newsletter (React, JavaScript)
                             </p>
                         </SetIntersectionObserver>
                     </div>
