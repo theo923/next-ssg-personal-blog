@@ -1,0 +1,385 @@
+.blogList {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogList input {
+    align-self: center;
+    width: 60%;
+    margin-top: 0.75rem /* 12px */;
+    margin-bottom: 0.75rem /* 12px */;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    line-height: 2rem /* 32px */;
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+    transition-property: background-color, border-color, color, fill, stroke,
+        opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: var(--tw-transform);
+    border-radius: 0.5rem /* 8px */;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+        var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+        calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+        var(--tw-shadow, 0 0 #0000);
+    --tw-ring-offset-color: currentColor;
+    --tw-ring-offset-width: 2px;
+}
+
+.blogList input:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+        var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+        calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+        var(--tw-shadow, 0 0 #0000);
+}
+
+.blogSideBarDiv {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.blogSideBarDiv h1 {
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.blogSideBarDiv p {
+    font-family: Spartan, sans-serif;
+    font-style: italic;
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.blogSideBar {
+    position: sticky;
+    top: 3.5rem /* 56px */;
+    overflow: hidden;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0.5rem /* 8px */;
+    margin: 3rem 1.5rem 1.5rem 1.5rem;
+    margin-right: 1rem /* 16px */;
+    max-height: calc(100vh - 148px);
+    flex: 0 100000 250px;
+}
+
+.blogSideBarIcon {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+.blogSideBarIcon div {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem /* 24px */;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.blogSideBarIcon div h2 {
+    padding: 0 0.75rem 0 0.75rem;
+}
+
+.blogSideBarIcon div h2 a {
+    --tw-text-opacity: 1;
+    color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.blogSideBarIcon div h2 a:hover {
+    --tw-text-opacity: 1;
+    color: rgba(147, 197, 253, var(--tw-text-opacity));
+}
+
+.blogSideBarImg {
+    max-width: 24rem /* 384px */;
+    margin-left: auto;
+    margin-right: auto;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.blogSideBarImg Image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.blogNode {
+    width: 100%;
+    margin-top: 1rem /* 16px */;
+    margin-bottom: 1rem /* 16px */;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    cursor: pointer;
+    border-radius: 0.5rem /* 8px */;
+}
+
+.blogNode:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.blogNode div h2 {
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.blogNode div h2:hover {
+    --tw-text-opacity: 1;
+    color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.blogNode div h3 {
+    font-family: Spartan, sans-serif;
+    font-style: italic;
+    margin-top: 0.5rem /* 8px */;
+    --tw-text-opacity: 1;
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.blogNodeTag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blogNodeTag div span {
+    font-family: Spartan, sans-serif;
+    font-weight: 300;
+    --tw-text-opacity: 1;
+    color: rgba(91, 33, 182, var(--tw-text-opacity));
+}
+
+.blogNodeTag div button {
+    font-family: Spartan, sans-serif;
+    font-style: italic;
+    margin-right: 0.5rem /* 8px */;
+    padding: 0.5rem 0.75rem 0.25rem 0.5rem;
+    font-size: 0.75rem /* 12px */;
+    line-height: 1rem /* 16px */;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(243, 244, 246, var(--tw-text-opacity));
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 200ms;
+    transform: var(--tw-transform);
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+    border-radius: 0.25rem /* 4px */;
+    cursor: pointer;
+}
+
+.blogPost h1 {
+    font-family: "Proza Libre", sans-serif;
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+    line-height: 2;
+}
+
+.blogPost h2 {
+    font-family: Spartan, sans-serif;
+    font-style: italic;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    line-height: 1.625;
+}
+
+.blogPost span {
+    font-family: Spartan, sans-serif;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    font-weight: 300;
+    --tw-text-opacity: 1;
+    color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.blogPostBreak {
+    margin: 1.5rem 0 1.5rem 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 2px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(48, 49, 51),
+        transparent
+    );
+}
+
+.blogPostContent {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    padding-bottom: 24rem /* 384px */;
+    margin-bottom: 24rem /* 384px */;
+    line-height: 1.625;
+}
+
+.blogBody {
+    margin: 3rem 1rem 0.5rem 1rem;
+}
+
+.blogBodyDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoritesSideBar {
+    display: block;
+    position: sticky;
+    top: 3.5rem /* 56px */;
+    overflow: hidden;
+    max-height: calc(100vh - 148px);
+    flex: 0 100000 250px;
+}
+
+.categoritesSideBarDiv {
+    margin: 3rem 1rem 1.5rem 1.5rem;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.categoritesSideBarDivDiv {
+    padding-top: 1rem /* 16px */;
+    padding-bottom: 1rem /* 16px */;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.categoritesSideBarDivDiv h1 {
+    font-family: "Proza Libre", sans-serif;
+    margin-left: 2.5rem /* 40px */;
+    margin-right: 2.5rem /* 40px */;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.categoritesSideBarDivDivBorder {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5rem /* 24px */;
+    padding-right: 1.5rem /* 24px */;
+}
+
+.categoritesItem {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0.5rem 0 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    cursor: pointer;
+    border-radius: 0.5rem /* 8px */;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.categoritesItem:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.categoritesItem h2 {
+    font-family: "Hind Siliguri", sans-serif;
+    padding-left: 0.5rem /* 8px */;
+    padding-right: 0.5rem /* 8px */;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+}
+
+@media (min-width: 768px) {
+    .blogList input {
+        align-self: flex-end;
+        width: 33.333333%;
+    }
+    .blogSideBar {
+        margin-right: 1.5rem /* 24px */;
+    }
+    .blogSideBarImg {
+        border-radius: 0.5rem /* 8px */;
+    }
+    .blogNode {
+        margin-left: 0.5rem /* 8px */;
+        margin-right: 0.5rem /* 8px */;
+    }
+    .blogPost {
+        padding: 3.5rem /* 56px */;
+    }
+    .blogBody {
+        margin: 0 2rem 2rem 2rem;
+    }
+    .categoritesSideBarDiv {
+        margin-right: 1.5rem /* 24px */;
+    }
+}
+
+@media (min-width: 1024px) {
+    .categoritesSideBarDivDiv {
+        font-size: 1.875rem /* 30px */;
+        line-height: 2.25rem /* 36px */;
+    }
+    .categoritesSideBarDivDiv h1 {
+        margin-top: 2.5rem /* 40px */;
+        font-size: 1.875rem /* 30px */;
+        line-height: 2.25rem /* 36px */;
+    }
+}
+
+@media (min-width: 1280px) {
+    .blogSideBar {
+        margin-right: 2rem /* 32px */;
+    }
+    .categoritesSideBarDiv {
+        margin-right: 2rem /* 32px */;
+    }
+}
+
+@media (min-width: 1536px) {
+    .blogSideBar {
+        margin-left: 0.75rem /* 12px */;
+    }
+    .categoritesSideBarDiv {
+        margin-left: 0.75rem /* 12px */;
+    }
+    .categoritesSideBarDivDiv {
+        width: 18rem /* 256px */;
+    }
+    .categoritesSideBarDivDivBorder {
+        flex-direction: column;
+    }
+}
