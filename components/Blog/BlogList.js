@@ -18,11 +18,10 @@ class BlogList extends React.Component {
         const { data, item, category } = this.props;
         const { searchBox } = this.state;
         return (
-            <div data-test="component-blog-blogList" className="flex flex-col">
+            <div data-test="component-blog-blogList" className="blogList">
                 <input
                     value={searchBox}
                     onChange={(e) => this.handleSearchChange(e)}
-                    className="self-center md:self-end w-3/5 md:w-1/3 my-3 px-3 py-2 leading-8 text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:shadow-outline ring-0 focus:ring-4 ring-offset-current ring-offset-2"
                     placeholder="Type to Search"
                 />
                 {category
