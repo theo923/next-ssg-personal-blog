@@ -2,18 +2,9 @@ import React from "react";
 import Navigation from "./Navigation";
 import Content from "./Content";
 import Footer from "./Footer";
+import categories from "./Text/categories";
 
 const navItem = ["About", "Blog", "Project", "Contact"];
-const categories = [
-    "React",
-    "NextJS",
-    "Tech",
-    "C#",
-    "Python",
-    "Lifestyle",
-    "Music",
-    "JavaScript",
-];
 
 const Layout = ({ type, category, data, item, httpString }) => {
     return (

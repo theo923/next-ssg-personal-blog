@@ -14,7 +14,7 @@ const CategoriesSideBar = ({ categories }) => {
                         {!categories
                             ? null
                             : categories.map((tag, idx) => (
-                                  <CategoriesItem tag={tag} idx={idx} />
+                                  <CategoriesItem tag={tag} key={idx} />
                               ))}
                     </div>
                 </div>

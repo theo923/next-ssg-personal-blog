@@ -17,11 +17,8 @@ const AboutMe = () => {
     const executeScroll = (Ref) => Ref.current.scrollIntoView();
 
     return (
-        <section
-            data-test="component-aboutme"
-            className="flex justify-center min-h-screen"
-        >
-            <div className="container bg-gray-100 rounded-lg shadow-lg 2xl:w-10/12 3xl:w-7/12">
+        <section data-test="component-aboutme" className="about">
+            <div className="container aboutCotent">
                 <AboutMeSideBar
                     coverRef={coverRef}
                     coreProjectsRef={coreProjectsRef}

@@ -25,7 +25,7 @@ const BlogPost = ({ data, httpString }) => {
                         </button>
                     ))}
                 </div>
-                <span>{data?.date}</span>
+                <span className="blogPostDate">{data?.date}</span>
             </div>
             <div className="blogPostBreak" />
             <div
