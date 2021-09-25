@@ -8,47 +8,35 @@ const LangNHobbies = ({ forwardRef }) => {
             <div
                 data-test="component-langNHobbies"
                 ref={forwardRef}
-                className="py-20 my-20 mx-4 lg:mx-14 min-h-screen"
+                className="langNhobbies"
             >
-                <div className="grid grid-cols-2 text-center mb-12 lg:m-28">
-                    <div className="border-r-2 border-gray-700 my-32">
+                <div className="langNhobbiesContainer">
+                    <div className="langNhobbiesLeftContainer">
                         <SetIntersectionObserver type={1} direction="down">
-                            <h3 className="font-spartan text-2xl lg:text-5xl mb-20">
-                                LANGUAGES
-                            </h3>
+                            <h3>LANGUAGES</h3>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={2} direction="left">
-                            <p className="font-anaheim text-2xl mb-20">
-                                English
-                            </p>
+                            <p>English</p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={3} direction="left">
-                            <p className="font-anaheim text-2xl mb-20">
-                                Cantonese
-                            </p>
+                            <p>Cantonese</p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={4} direction="left">
-                            <p className="font-anaheim text-2xl mb-20">
-                                Japanese
-                            </p>
+                            <p>Japanese</p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={5} direction="left">
-                            <p className="font-anaheim text-2xl mb-20">
-                                Mandarin
-                            </p>
+                            <p>Mandarin</p>
                         </SetIntersectionObserver>
                     </div>
 
-                    <div className="border-l-2 border-gray-700 my-32">
+                    <div className="langNhobbiesRightontainer">
                         <SetIntersectionObserver type={1} direction="down">
-                            <h3 className="font-spartan text-2xl lg:text-5xl mb-20">
-                                HOBBIES
-                            </h3>
+                            <h3>HOBBIES</h3>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={2} direction="right">
-                            <p className="font-anaheim text-2xl mb-20">
+                            <p>
                                 Writing{" "}
-                                <span className="text-blue-400 hover:text-blue-700">
+                                <span>
                                     <Link href="/">
                                         <a target="_blank">Blog</a>
                                     </Link>
@@ -56,9 +44,9 @@ const LangNHobbies = ({ forwardRef }) => {
                             </p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={3} direction="right">
-                            <p className="font-anaheim text-2xl mb-20">
+                            <p>
                                 Listening to tech podcast (
-                                <span className="text-blue-400 hover:text-blue-700">
+                                <span>
                                     <a
                                         href="https://syntax.fm/"
                                         target="_blank"
@@ -67,7 +55,7 @@ const LangNHobbies = ({ forwardRef }) => {
                                     </a>
                                 </span>
                                 ,{" "}
-                                <span className="text-blue-400 hover:text-blue-700">
+                                <span>
                                     <a
                                         href="https://devchat.tv/show/javascript-jabber/"
                                         target="_blank"
@@ -79,15 +67,13 @@ const LangNHobbies = ({ forwardRef }) => {
                             </p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={4} direction="right">
-                            <p className="font-anaheim text-2xl mb-20">
+                            <p>
                                 Learning new Technology in any criteria (Unity,
                                 Unraid OS)
                             </p>
                         </SetIntersectionObserver>
                         <SetIntersectionObserver type={5} direction="right">
-                            <p className="font-anaheim text-2xl mb-20">
-                                Reading Tech newsletter (React, JavaScript)
-                            </p>
+                            <p>Reading Tech newsletter (React, JavaScript)</p>
                         </SetIntersectionObserver>
                     </div>
                 </div>

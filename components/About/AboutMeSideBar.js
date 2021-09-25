@@ -14,38 +14,35 @@ const AboutMeSideBar = ({
     executeScroll,
 }) => {
     return (
-        <nav
-            data-test="component-aboutMeSideBar"
-            className="fixed right-3 sm:right-1/13 md:right-1/7 lg:right-auto top-1/2 lg:w-1/12 h-full flex flex-col z-30"
-        >
-            <div className="flex flex-col justify-center items-center">
+        <nav data-test="component-aboutMeSideBar" className="aboutSideBar">
+            <div className="aboutSideBarDiv">
                 <GrLinkTop
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(coverRef)}
                 />
                 <GrProjects
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(coreProjectsRef)}
                 />
                 <FaRegStar
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(completeSkillSetsRef)}
                 />
                 <GiSkills
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(softSkillsRef)}
                 />
                 <GrLanguage
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(langNHobbiesRef)}
                 />
                 <ImExit
-                    className="my-4 cursor-pointer hover:text-green-500"
+                    className="aboutSideBarDivIcon"
                     size={20}
                     onClick={() => executeScroll(contactItemRef)}
                 />

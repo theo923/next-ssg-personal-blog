@@ -4,16 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-
-const categories = [
-    "React",
-    "NextJS",
-    "JavaScript",
-    "HTML5",
-    "CSS",
-    "Lifestyle",
-    "Music",
-];
+import categories from "../../components/Text/categories";
 
 const Catergory = ({ category, data, slugs }) => {
     const type = "blog";

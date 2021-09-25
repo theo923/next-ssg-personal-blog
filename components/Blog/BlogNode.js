@@ -18,7 +18,7 @@ const BlogNode = ({ data, post }) => {
                                 </button>
                             ))}
                         </div>
-                        <span>{data?.date}</span>
+                        <span className="blogPostDate">{data?.date}</span>
                     </div>
                 </div>
             </Link>

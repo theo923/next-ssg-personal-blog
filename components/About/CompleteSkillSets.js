@@ -1,6 +1,6 @@
 import React from "react";
 import SetIntersectionObserver from "../functionality/SetIntersectionObserver";
-import { FaStar } from "react-icons/fa";
+import Skill from "./Skill";
 
 const CompleteSkillSets = ({ forwardRef }) => {
     const skills = {
@@ -31,42 +31,27 @@ const CompleteSkillSets = ({ forwardRef }) => {
         "Static Site Generation": true,
     };
 
-    const SkillsGenerator = (name, star, idx) => {
-        return (
-            <SetIntersectionObserver key={idx} type={idx} direction="left">
-                <div className="font-spartan border-gray-700">
-                    <span className="flex justify-items-center items-center m-6">
-                        <FaStar
-                            className={`text-yellow-500 mr-2 ${
-                                star ? "" : "hidden"
-                            }`}
-                            size={13}
-                        />
-                        {name}
-                    </span>
-                </div>
-            </SetIntersectionObserver>
-        );
-    };
-
     return (
         <>
             <div
                 data-test="component-completeSkillSets"
                 ref={forwardRef}
-                className="pt-20 mt-40 lg:mx-20 min-h-screen"
+                className="skillSet"
             >
-                <div className="flex flex-col items-center justify-center mb-12 h-full">
+                <div className="skillSetDiv">
                     <SetIntersectionObserver type={1} direction="down">
-                        <h3 className="font-spartan text-5xl my-20 lg:m-28">
-                            Skill Sets
-                        </h3>
+                        <h3 className="aboutHeading">Skill Sets</h3>
                     </SetIntersectionObserver>
-                    <div className="grid grid-cols-2 justify-items-start items-start text-xl">
+                    <div className="skillGrid">
                         {skills
-                            ? Object.entries(skills).map(([key, val], idx) => {
-                                  return SkillsGenerator(key, val, idx);
-                              })
+                            ? Object.entries(skills).map(([key, val], idx) => (
+                                  <Skill
+                                      key={idx}
+                                      name={key}
+                                      star={val}
+                                      idx={idx}
+                                  />
+                              ))
                             : null}
                     </div>
                 </div>

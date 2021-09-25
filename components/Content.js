@@ -12,12 +12,8 @@ const Content = ({ type, category, data, item, httpString, categories }) => {
         <div data-test="component-app-content" className="h-full">
             {type === "blog" ? (
                 <section>
-                    <div
-                        id="header"
-                        className="flex items-center justify-center shadow-lg bg-gradient-to-r from-blue-500 to-blue-600"
-                        style={{ height: 400 }}
-                    >
-                        <p className="m-4 text-2xl font-anaheim text-white flex text-center">
+                    <div id="header" className="banner">
+                        <p>
                             Hello, I am Theo, Welcome to my blog.
                             <br /> I love learning and I will keep sharing what
                             I have learnt everyday.
@@ -25,11 +21,11 @@ const Content = ({ type, category, data, item, httpString, categories }) => {
                             message on the Contact page
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-5 ">
-                        <div className="order-2 2xl:order-1 lg:col-span-3 2xl:col-span-1 block justify-self-center">
+                    <div className="blogContent">
+                        <div className="blogContentCategory">
                             <CategoriesSideBar categories={categories} />
                         </div>
-                        <div className="2xl:order-2 lg:col-span-2 2xl:col-span-3">
+                        <div className="blogContentBody">
                             <Body
                                 category={category}
                                 data={data}
@@ -37,30 +33,21 @@ const Content = ({ type, category, data, item, httpString, categories }) => {
                                 httpString={httpString}
                             />
                         </div>
-                        <div className="2xl:order-3 justify-self-center ">
+                        <div className="blogContentAuthor">
                             <AuthorInfo />
                         </div>
                     </div>
                 </section>
             ) : type === "project" ? (
-                <div
-                    id="header"
-                    className="flex items-center justify-center shadow-lg bg-gradient-to-r from-purple-400 to-purple-500"
-                >
+                <div id="header" className="projectContent">
                     <ProjectInfo />
                 </div>
             ) : type === "contact" ? (
-                <div
-                    id="header"
-                    className="flex items-center justify-center shadow-lg bg-gradient-to-r from-red-400 to-red-500"
-                >
+                <div id="header" className="contactContent">
                     <ContactMe />
                 </div>
             ) : type === "about" ? (
-                <div
-                    id="header"
-                    className="overflow-x-hidden bg-gradient-to-r from-green-600 to-green-700"
-                >
+                <div id="header" className="aboutContent">
                     <AboutMe />
                 </div>
             ) : null}

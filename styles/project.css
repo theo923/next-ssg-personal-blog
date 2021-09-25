@@ -1,0 +1,97 @@
+.project {
+    align-items: center;
+    padding: 16rem 1.25rem 16rem 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.projectFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem /* 48px */;
+    text-align: left;
+}
+
+.projectDetail {
+    width: 100%;
+    padding: 1.5rem /* 24px */;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectDetailDiv {
+    padding: 1.5rem /* 24px */;
+    margin-top: 1rem /* 16px */;
+    margin-bottom: 1rem /* 16px */;
+    cursor: pointer;
+    border-radius: 0.75rem /* 12px */;
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition-property: background-color, border-color, color, fill, stroke,
+        opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.projectDetailDiv:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+    --tw-translate-y: -0.25rem /* -4px */;
+    transform: var(--tw-transform);
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+}
+
+.projectDetailImg {
+    object-fit: cover;
+    object-position: center;
+    height: 18rem /* 288px */;
+    width: 100%;
+    margin-bottom: 2rem /* 32px */;
+    border-radius: 0.75rem /* 12px */;
+}
+
+.projectDetailHeading {
+    font-family: Spartan, sans-serif;
+    margin: 0 auto 2rem auto;
+    height: 5rem /* 80px */;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.projectDetailContext {
+    font-family: "Hind Siliguri", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.125rem /* 18px */;
+    line-height: 2;
+    height: 16rem /* 256px */;
+}
+
+@media (min-width: 768px) {
+    .projectDetail {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project {
+        padding-left: 4rem /* 64px */;
+        padding-right: 4rem /* 64px */;
+    }
+}
+
+@media (min-width: 1536px) {
+    .projectDetail {
+        width: 33.333333%;
+    }
+}
