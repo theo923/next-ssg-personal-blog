@@ -128,21 +128,21 @@ const AboutProject = ({ project, direction }) => {
                                     }`}
                                 >
                                     {direction === "right" ? (
-                                        <h3 className="aboutProjectLinkDescription">
+                                        <h2 className="aboutProjectLinkDescription">
                                             {project?.linkdescription[idx]}
                                             <FaAngleDoubleRight
                                                 className="aboutProjectLinkArrowRight"
                                                 size={20}
                                             ></FaAngleDoubleRight>
-                                        </h3>
+                                        </h2>
                                     ) : (
-                                        <h3 className="aboutProjectLinkDescription">
+                                        <h2 className="aboutProjectLinkDescription">
                                             <FaAngleDoubleLeft
                                                 className="aboutProjectLinkArrowLeft"
                                                 size={20}
                                             ></FaAngleDoubleLeft>
                                             {project?.linkdescription[idx]}
-                                        </h3>
+                                        </h2>
                                     )}
                                 </span>
                             </span>
