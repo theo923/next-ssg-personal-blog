@@ -55,11 +55,11 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
                             <span>international startup</span> across hongkong
                             and japan for building functional and complex online
                             shopping application. Actively on Github{" "}
-                            <span>every day</span> with above <span>500+</span>{" "}
+                            <span>every day</span> with near <span>700</span>{" "}
                             contributions this year. Created more than{" "}
-                            <span>6+</span> projects within 4 months. Keep
+                            <span>14+</span> repositories in Github. Keep
                             learning and writing Blog post{" "}
-                            <span>every day</span>.
+                            <span>actively</span>.
                         </p>
                     </SetIntersectionObserver>
                     <div className="aboutCoverBtn">
