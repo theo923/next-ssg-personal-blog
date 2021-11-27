@@ -19,11 +19,11 @@ const AuthorSideBar = () => {
                 />
                 <div className="blogSideBarDiv">
                     <h1>Theo Tam</h1>
-                    <p>Coder / Learner / Challenger</p>
+                    <p>{"Professional / Lifelong Learner"}</p>
                     <div className="blogSideBarIcon">
                         <div>
                             <CgProfile size="30px" />
-                            <h2>Freelance React Developer</h2>
+                            <h2>React Developer</h2>
                         </div>
 
                         <div>
@@ -54,7 +54,7 @@ const AuthorSideBar = () => {
                         </div>
                         <div>
                             <GrLocation size="30px" />
-                            <h2>London</h2>
+                            <h2>Eastleigh</h2>
                         </div>
                     </div>
                 </div>
