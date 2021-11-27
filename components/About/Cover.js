@@ -49,16 +49,20 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
                     <SetIntersectionObserver type={3} direction="right">
                         <p className="aboutCoverIntro">
                             A React Developer based in UK with{" "}
-                            <span>0.5 years</span> of commercial experiences in
-                            freelancing, <span>4 years</span> of experiences in
-                            programming. Worked with{" "}
+                            <span>1 years</span> of commercial experiences in
+                            web development, <span>more than 5 years</span> of
+                            experiences in programming. Worked with{" "}
                             <span>international startup</span> across hongkong
                             and japan for building functional and complex online
-                            shopping application. Actively on Github{" "}
-                            <span>every day</span> with near <span>700</span>{" "}
-                            contributions this year. Created more than{" "}
-                            <span>14+</span> repositories in Github. Keep
-                            learning and writing Blog post{" "}
+                            shopping application before. Now working for a
+                            company which is{" "}
+                            <span>leading in advertising industry</span> and
+                            building amazing websites everyday. As a{" "}
+                            <span>lifelong learner</span> , I am still actively
+                            on Github <span>every day</span> with near{" "}
+                            <span>800</span> contributions this year. Created
+                            more than <span>15+</span> repositories in Github.
+                            Keep learning and writing Blog post{" "}
                             <span>actively</span>.
                         </p>
                     </SetIntersectionObserver>

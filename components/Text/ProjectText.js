@@ -26,3 +26,9 @@ export const dockershop = {
     context:
         "Online Shopping Mall Website DEMO Docker Image that can be used by Dockhub / Unraid Docker",
 };
+export const bookmetadata = {
+    link: "https://book-metadata-extractor.vercel.app/",
+    imgUrl: "./image/metadata.png",
+    heading: "Book Metadata Extractor",
+    context: "extract book metadata from site",
+};
