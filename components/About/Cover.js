@@ -54,14 +54,14 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
                             experiences in programming. Worked with{" "}
                             <span>international startup</span> across hongkong
                             and japan for building functional and complex online
-                            shopping application before. Now working for a
+                            shopping application before. Now I am working for a
                             company which is{" "}
-                            <span>leading in advertising industry</span> and
-                            building amazing websites everyday. As a{" "}
+                            <span>leading in advertising industry</span> and I
+                            build amazing websites everyday. As a{" "}
                             <span>lifelong learner</span> , I am still actively
-                            on Github <span>every day</span> with near{" "}
+                            on Github <span>every day</span> with more than{" "}
                             <span>800</span> contributions this year. Created
-                            more than <span>15+</span> repositories in Github.
+                            more than <span>17</span> repositories in Github.
                             Keep learning and writing Blog post{" "}
                             <span>actively</span>.
                         </p>
