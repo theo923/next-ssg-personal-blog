@@ -1,6 +1,7 @@
 const categories = [
     "React",
     "NextJS",
+    "Leetcode",
     "Tech",
     "Csharp",
     "Python",
