@@ -60,10 +60,10 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
                             build amazing websites everyday. As a{" "}
                             <span>lifelong learner</span> , I am still actively
                             on Github <span>every day</span> with more than{" "}
-                            <span>800</span> contributions this year. Created
-                            more than <span>17</span> repositories in Github.
-                            Keep learning and writing Blog post{" "}
-                            <span>actively</span>.
+                            <span>1000+</span> contributions this year. Created
+                            <span>19</span> repositories in Github. Keep
+                            learning and writing Blog post <span>actively</span>
+                            .
                         </p>
                     </SetIntersectionObserver>
                     <div className="aboutCoverBtn">
