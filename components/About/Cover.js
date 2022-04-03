@@ -44,7 +44,10 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
               actively on Github <span>every day</span> with more than{" "}
               <span>1200+</span> contributions this year. Created
               <span>19</span> repositories in Github. Keep learning and writing
-              Blog post <span>actively</span>.
+              Blog post <span>actively</span>. Besides, <span>Python</span> is a
+              language that I have constantly used. I usually loved to crack on
+              with some challenging data structure problems on
+              <span>leetcode</span> by <span>Python</span>.
             </p>
           </SetIntersectionObserver>
           <div className="aboutCoverBtn">
