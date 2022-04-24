@@ -42,8 +42,8 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
               maintaining and building new functionalities for this amazing
               websites everyday. As a <span>lifelong learner</span> , I am still
               actively on Github <span>every day</span> with more than{" "}
-              <span>1200+</span> contributions this year. Created
-              <span>19</span> repositories in Github. Keep learning and writing
+              <span>1300+</span> contributions this year. Created
+              <span>20</span> repositories in Github. Keep learning and writing
               Blog post <span>actively</span>. Besides, <span>Python</span> is a
               language that I have constantly used. I usually loved to crack on
               with some challenging data structure problems on
