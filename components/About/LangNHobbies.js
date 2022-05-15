@@ -35,8 +35,7 @@ const LangNHobbies = ({ forwardRef }) => {
             </SetIntersectionObserver>
             <SetIntersectionObserver type={2} direction="right">
               <p>
-                Problem Solving
-                <span>Leetcode</span>
+                Problem Solving <span>Leetcode</span>
               </p>
             </SetIntersectionObserver>
             <SetIntersectionObserver type={3} direction="right">
