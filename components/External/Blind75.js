@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { FiLink } from "react-icons/fi";
+import { BsWindow } from "react-icons/bs";
 import NextLink from "next/link";
 
 const LeetCodeDifficulty = {
@@ -55,7 +56,9 @@ const Blind75 = () => {
                       });
                     }}
                   >
-                    <h2>{cat}</h2>
+                    <div>
+                      <h2>{cat}</h2>
+                    </div>
                     <div className="blindFunction">
                       <div className="blindProgressBase">
                         <div
@@ -83,19 +86,29 @@ const Blind75 = () => {
                           return (
                             <div>
                               <div className="blindQuestion">
-                                <h2
-                                  style={{
-                                    color: LeetCodeDifficulty[q.difficulty],
-                                  }}
-                                >
-                                  {q.question}
-                                </h2>
+                                <div className="blindQuestion">
+                                  <h2
+                                    style={{
+                                      color: LeetCodeDifficulty[q.difficulty],
+                                    }}
+                                  >
+                                    {q.question}
+                                  </h2>
+                                  {!q.lcUrl && (
+                                    <div
+                                      className="blindLink"
+                                      style={{ marginLeft: "20px" }}
+                                    >
+                                      <a href={q.lcUrl}>
+                                        <BsWindow />
+                                      </a>
+                                    </div>
+                                  )}
+                                </div>
                                 <div className="blindQuestion">
                                   {q.url && (
                                     <div className="blindLink">
-                                      <NextLink
-                                        href={`/blog/${q.url}`}
-                                      >
+                                      <NextLink href={`/blog/${q.url}`}>
                                         <FiLink />
                                       </NextLink>
                                     </div>
