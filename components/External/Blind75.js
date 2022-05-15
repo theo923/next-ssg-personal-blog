@@ -93,7 +93,9 @@ const Blind75 = () => {
                                 <div className="blindQuestion">
                                   {q.url && (
                                     <div className="blindLink">
-                                      <NextLink href={q.url ? q.url : "/"}>
+                                      <NextLink
+                                        href={`/blog/${q.url}`}
+                                      >
                                         <FiLink />
                                       </NextLink>
                                     </div>

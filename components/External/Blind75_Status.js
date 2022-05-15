@@ -17,7 +17,7 @@ export const BLIND75_STATUS = {
     {
       question: "Two Sum",
       status: true,
-      url: "gfdgsfgfd",
+      url: "20220515-0100",
       schedule: [0],
       difficulty: 0,
     },
