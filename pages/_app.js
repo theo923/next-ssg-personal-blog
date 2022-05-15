@@ -10,6 +10,7 @@ import "../styles/project.css";
 import "../styles/content.css";
 import "../styles/footer.css";
 import "../styles/nav.css";
+import "../styles/external.css";
 
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />;
