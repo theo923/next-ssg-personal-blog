@@ -94,12 +94,12 @@ const Blind75 = () => {
                                   >
                                     {q.question}
                                   </h2>
-                                  {!q.lcUrl && (
+                                  {q.lcUrl && (
                                     <div
                                       className="blindLink"
                                       style={{ marginLeft: "20px" }}
                                     >
-                                      <a href={q.lcUrl}>
+                                      <a href={q.lcUrl} target="_blank">
                                         <BsWindow />
                                       </a>
                                     </div>
