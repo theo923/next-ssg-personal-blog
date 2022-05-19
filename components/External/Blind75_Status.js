@@ -130,8 +130,8 @@ export const BLIND75_STATUS = {
   Stack: [
     {
       question: "Valid Parentheses",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220519-0100",
       lcUrl: "https://leetcode.com/problems/valid-parentheses/",
       schedule: [0],
       difficulty: 0,
