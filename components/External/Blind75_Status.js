@@ -167,8 +167,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Merge Two Linked Lists",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220520-0100",
       lcUrl: "https://leetcode.com/problems/merge-two-sorted-lists/",
       schedule: [0],
       difficulty: 0,
