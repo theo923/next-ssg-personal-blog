@@ -7,13 +7,21 @@ import "prismjs/components/prism-jsx";
 import "prismjs/components/prism-python";
 import SetIntersectionObserver from "../functionality/SetIntersectionObserver";
 import Blind75 from "../External/Blind75";
+import { useRouter } from "next/router";
 
 const BlogPost = ({ data, httpString }) => {
+  const router = useRouter();
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       Prism.highlightAll(httpString);
     }
   }, []);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      Prism.highlightAll(httpString);
+    }
+  }, [router.asPath]);
 
   return (
     <article data-test="component-blog-blogPost" className="blogPost">
