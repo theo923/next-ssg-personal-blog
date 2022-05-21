@@ -10,8 +10,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Valid Anagram",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220521-0100",
       lcUrl: "https://leetcode.com/problems/valid-anagram/",
       schedule: [0],
       difficulty: 0,
