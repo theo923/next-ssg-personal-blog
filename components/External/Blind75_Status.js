@@ -2,8 +2,8 @@ export const BLIND75_STATUS = {
   "Arrays & Hashing": [
     {
       question: "Contains Duplicate",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220522",
       lcUrl: "https://leetcode.com/problems/contains-duplicate/",
       schedule: [0],
       difficulty: 0,
