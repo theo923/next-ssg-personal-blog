@@ -3,7 +3,7 @@ export const BLIND75_STATUS = {
     {
       question: "Contains Duplicate",
       status: true,
-      url: "20220522",
+      url: "20220522-0100",
       lcUrl: "https://leetcode.com/problems/contains-duplicate/",
       schedule: [0],
       difficulty: 0,
