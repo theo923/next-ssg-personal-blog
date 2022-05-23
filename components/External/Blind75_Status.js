@@ -209,8 +209,8 @@ export const BLIND75_STATUS = {
   Tree: [
     {
       question: "Invert Binary Tree",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220523-0100",
       lcUrl: "https://leetcode.com/problems/invert-binary-tree/",
       schedule: [0],
       difficulty: 0,
