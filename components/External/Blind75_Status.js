@@ -217,8 +217,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Maximum Depth of Binary Tree",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220524-0100",
       lcUrl: "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
       schedule: [0],
       difficulty: 0,
