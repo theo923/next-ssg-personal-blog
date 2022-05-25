@@ -241,8 +241,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Lowest Common Ancestor of a BST",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220525-0100",
       lcUrl:
         "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
       schedule: [0],
