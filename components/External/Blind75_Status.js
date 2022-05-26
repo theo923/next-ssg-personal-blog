@@ -518,8 +518,8 @@ export const BLIND75_STATUS = {
   Greedy: [
     {
       question: "Maximum Subarray",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220526-0100",
       lcUrl: "https://leetcode.com/problems/maximum-subarray/",
       schedule: [0],
       difficulty: 0,
