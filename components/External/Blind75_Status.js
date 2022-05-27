@@ -526,8 +526,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Jump Game",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220527-0100",
       lcUrl: "https://leetcode.com/problems/jump-game/",
       schedule: [0],
       difficulty: 1,
