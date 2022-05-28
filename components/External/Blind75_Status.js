@@ -68,8 +68,8 @@ export const BLIND75_STATUS = {
   "Two Pointers": [
     {
       question: "Valid Palindrome",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220529-0100",
       lcUrl: "https://leetcode.com/problems/valid-palindrome/",
       schedule: [0],
       difficulty: 0,
