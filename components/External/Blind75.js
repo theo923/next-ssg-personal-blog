@@ -32,7 +32,7 @@ const Blind75 = () => {
   const [showAll, setShowAll] = useState(getBooleanList(objectList));
 
   return (
-    <div className="w-full" data-test="component-Blind75">
+    <div data-test="component-Blind75" className="w-full">
       <div className="blindWrapper">
         <div
           className="blindComponent blindHeader"

@@ -21,7 +21,7 @@ const BlogPost = ({ data, httpString }) => {
     if (typeof window !== "undefined") {
       Prism.highlightAll(httpString);
     }
-  }, [router.asPath]);
+  }, [router?.asPath]);
 
   return (
     <article data-test="component-blog-blogPost" className="blogPost">
