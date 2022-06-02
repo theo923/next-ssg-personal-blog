@@ -418,8 +418,8 @@ export const BLIND75_STATUS = {
   "1-D Dynamic Programming": [
     {
       question: "Climbing Stairs",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220602-0100",
       lcUrl: "https://leetcode.com/problems/climbing-stairs/",
       schedule: [0],
       difficulty: 0,
