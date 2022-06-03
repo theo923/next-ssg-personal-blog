@@ -426,8 +426,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "House Robber",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220603-0100",
       lcUrl: "https://leetcode.com/problems/house-robber/",
       schedule: [0],
       difficulty: 1,
