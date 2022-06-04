@@ -9,6 +9,7 @@ const categories = [
   "Lifestyle",
   "Music",
   "JavaScript",
+  "JAVA",
 ];
 
 export default categories;

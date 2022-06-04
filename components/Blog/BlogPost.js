@@ -5,6 +5,7 @@ import Prism from "prismjs";
 import "prismjs/components/prism-csharp";
 import "prismjs/components/prism-jsx";
 import "prismjs/components/prism-python";
+import "prismjs/components/prism-java";
 import SetIntersectionObserver from "../functionality/SetIntersectionObserver";
 import Blind75 from "../External/Blind75";
 import { useRouter } from "next/router";
