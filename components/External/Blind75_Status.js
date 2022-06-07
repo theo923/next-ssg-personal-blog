@@ -450,8 +450,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Palindromic Substrings",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220608-0100",
       lcUrl: "https://leetcode.com/problems/palindromic-substrings/",
       schedule: [0],
       difficulty: 1,
