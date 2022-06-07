@@ -442,8 +442,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Longest Palindromic Substring",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220607-0100",
       lcUrl: "https://leetcode.com/problems/longest-palindromic-substring/",
       schedule: [0],
       difficulty: 1,
