@@ -458,8 +458,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Decode Ways",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220609-0100",
       lcUrl: "https://leetcode.com/problems/decode-ways/",
       schedule: [0],
       difficulty: 1,
