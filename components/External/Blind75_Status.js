@@ -500,8 +500,8 @@ export const BLIND75_STATUS = {
   "2-D Dynamic Programming": [
     {
       question: "Unique Paths",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220610-0100",
       lcUrl: "https://leetcode.com/problems/unique-paths/",
       schedule: [0],
       difficulty: 1,
