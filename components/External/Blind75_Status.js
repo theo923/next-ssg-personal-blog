@@ -357,8 +357,8 @@ export const BLIND75_STATUS = {
   Graphs: [
     {
       question: "Number of Islands",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220611-0100",
       lcUrl: "https://leetcode.com/problems/number-of-islands/",
       schedule: [0],
       difficulty: 1,
