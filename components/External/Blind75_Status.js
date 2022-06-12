@@ -365,8 +365,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Clone Graph",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220612-0100",
       lcUrl: "https://leetcode.com/problems/clone-graph/",
       schedule: [0],
       difficulty: 1,
