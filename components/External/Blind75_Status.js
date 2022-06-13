@@ -373,8 +373,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Pacific Atlantic Waterflow",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220613-0100",
       lcUrl: "https://leetcode.com/problems/pacific-atlantic-water-flow/",
       schedule: [0],
       difficulty: 1,
