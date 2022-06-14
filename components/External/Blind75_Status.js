@@ -339,8 +339,8 @@ export const BLIND75_STATUS = {
   Backtracking: [
     {
       question: "Combination Sum",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220614-0100",
       lcUrl: "https://leetcode.com/problems/combination-sum/",
       schedule: [0],
       difficulty: 1,
