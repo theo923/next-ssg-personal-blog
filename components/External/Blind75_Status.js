@@ -159,8 +159,8 @@ export const BLIND75_STATUS = {
   "Linked List": [
     {
       question: "Reverse Linked List",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220615-0100",
       lcUrl: "https://leetcode.com/problems/reverse-linked-list/",
       schedule: [0],
       difficulty: 0,
