@@ -175,8 +175,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Reorder List",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220616-0100",
       lcUrl: "https://leetcode.com/problems/reorder-list/",
       schedule: [0],
       difficulty: 1,
