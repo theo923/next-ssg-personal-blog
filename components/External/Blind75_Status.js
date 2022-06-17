@@ -225,8 +225,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Same Tree",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220617-0100",
       lcUrl: "https://leetcode.com/problems/same-tree/",
       schedule: [0],
       difficulty: 0,
