@@ -302,8 +302,8 @@ export const BLIND75_STATUS = {
   Tries: [
     {
       question: "Implement Trie",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220618-0100",
       lcUrl: "https://leetcode.com/problems/implement-trie-prefix-tree/",
       schedule: [0],
       difficulty: 1,
