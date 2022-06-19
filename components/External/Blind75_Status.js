@@ -347,8 +347,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Word Search",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220619-0100",
       lcUrl: "https://leetcode.com/problems/word-search/",
       schedule: [0],
       difficulty: 1,
