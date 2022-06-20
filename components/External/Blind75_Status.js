@@ -310,8 +310,8 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Design Add and Search Word Data Structure",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220620-0100",
       lcUrl:
         "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
       schedule: [0],
