@@ -94,8 +94,8 @@ export const BLIND75_STATUS = {
   "Sliding Window": [
     {
       question: "Best Time to Buy & Sell Stock",
-      status: false,
-      url: "",
+      status: true,
+      url: "20220625-0100",
       lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
       schedule: [0],
       difficulty: 0,
