@@ -10,7 +10,7 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
         <div className="aboutCoverContainer">
           <SetIntersectionObserver type={1} direction="down">
             <h1>Theo Tam</h1>
-            <h2>React Developer</h2>
+            <h2>Software Engineer</h2>
           </SetIntersectionObserver>
 
           <SetIntersectionObserver type={2} direction="left">
@@ -32,21 +32,19 @@ const Cover = ({ forwardRef, executeScroll, coreProjectsRef }) => {
 
           <SetIntersectionObserver type={3} direction="right">
             <p className="aboutCoverIntro">
-              A React Developer based in UK with <span>1 years</span> of
-              commercial experiences in web development,{" "}
-              <span>more than 6 years</span> of experiences in programming.
-              Worked with <span>international startup</span> across hong kong
-              and japan for building functional and complex online shopping
-              application before. Now I am working for a company which is{" "}
-              <span>leading in advertising industry</span> and I am now
-              maintaining and building new functionalities for this amazing
-              websites everyday. As a <span>lifelong learner</span> , I am still
-              actively on Github <span>every day</span> with more than{" "}
-              <span>1300+</span> contributions this year. Created
-              <span>20</span> repositories in Github. Keep learning and writing
-              Blog post <span>actively</span>. Besides, <span>Python</span> is a
-              language that I have constantly used. I usually loved to crack on
-              with some challenging data structure problems on
+              A Software Engineer based in UK (right now) with{" "}
+              <span>2 years</span> of commercial experiences in web development,
+              more than 6 years of experiences in programming. Now I am working
+              for <span>Twitter, Core Ads Team</span> as{" "}
+              <span>Fullstack Developer (F: React / B: Scala)</span>, help
+              advertisers reaching out to their targeted audiences so that their
+              brands could <span>keep growing</span>. With ownership in some
+              important <span>audience features</span>. Previously working for a
+              company which is leading in <span>advertising</span> industry and
+              maintaining and building new functionalities for Kidadl. Besides,{" "}
+              <span>Python</span> is a language that I have constantly used. I
+              usually loved to crack on with some challenging{" "}
+              <span>data structure & algorithm problems</span> on{" "}
               <span>leetcode</span> by <span>Python</span>.
             </p>
           </SetIntersectionObserver>
