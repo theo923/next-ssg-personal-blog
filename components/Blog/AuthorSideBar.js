@@ -23,7 +23,7 @@ const AuthorSideBar = () => {
           <div className="blogSideBarIcon">
             <div>
               <CgProfile size="30px" />
-              <h2>React Developer</h2>
+              <h2>Software Engineer</h2>
             </div>
 
             <div>
