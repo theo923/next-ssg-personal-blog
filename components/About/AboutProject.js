@@ -43,7 +43,7 @@ const AboutProject = ({ project, direction }) => {
   const promptToHover = () => (
     <span className="floatUpDown prompt">
       <FaAngleDoubleUp className="check" size={13} />
-      Try to hover it!
+      Try to hover over it!
     </span>
   );
   const showBox = (proj) => (
