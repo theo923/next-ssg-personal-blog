@@ -8,7 +8,14 @@
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 30px;
-  background-color: rgb(245, 173, 173);
+}
+
+.blindTimeLineComponent {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 .blindHeader {
@@ -55,7 +62,6 @@
   top: 0;
   left: 0;
   border-radius: 6px;
-  background-color: teal;
 }
 
 .blindQuestion {

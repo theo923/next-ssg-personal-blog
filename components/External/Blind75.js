@@ -17,8 +17,14 @@ const LeetCodeDifficulty = {
   2: "red",
 };
 
+const BatchTimeLine = [
+  { batch: 1, time: "15-05-2022", color: "#F5ADAD", barColor: "#008080" },
+  { batch: 2, time: "05-11-2022", color: "#76A6F2", barColor: "#FEBF51" },
+];
+
 const Blind75 = () => {
   const [headerExpand, setHeaderExpand] = useState(false);
+  const [batch, setBatch] = useState(1);
   let objectList = Reflect.ownKeys(BLIND75_STATUS) || [];
 
   const getBooleanList = (obj) => {
@@ -36,6 +42,7 @@ const Blind75 = () => {
       <div className="blindWrapper">
         <div
           className="blindComponent blindHeader"
+          style={{ backgroundColor: BatchTimeLine[batch].color }}
           onClick={() => setHeaderExpand((prev) => !prev)}
         >
           <h1 style={{ fontSize: "30px" }}>My Blind75 Progress</h1>
@@ -43,8 +50,20 @@ const Blind75 = () => {
             {headerExpand ? <FaCompressArrowsAlt /> : <FaExpandArrowsAlt />}
           </h1>
         </div>
+        {BatchTimeLine.map((timeline) => (
+          <button
+            className="blindTimeLineComponent"
+            style={{ backgroundColor: timeline.color }}
+            onClick={() => setBatch((_) => timeline.batch - 1)}
+          >
+            {timeline.time}
+          </button>
+        ))}
         {headerExpand && (
-          <div className="blindComponent">
+          <div
+            className="blindComponent"
+            style={{ backgroundColor: BatchTimeLine[batch].color }}
+          >
             {Reflect.ownKeys(BLIND75_STATUS).map((cat, idx) => {
               return (
                 <div key={`cat_${idx}`}>
@@ -65,11 +84,13 @@ const Blind75 = () => {
                           className="blindProgress"
                           style={{
                             width: `${
-                              (BLIND75_STATUS[cat].filter((b) => b.status)
-                                .length /
+                              (BLIND75_STATUS[cat].filter(
+                                (b) => b.status[batch]
+                              ).length /
                                 BLIND75_STATUS[cat].length) *
                               100
                             }%`,
+                            backgroundColor: BatchTimeLine[batch].barColor,
                           }}
                         />
                       </div>
@@ -106,14 +127,14 @@ const Blind75 = () => {
                                   )}
                                 </div>
                                 <div className="blindQuestion">
-                                  {q.url && (
+                                  {q.url[batch].length > 0 && (
                                     <div className="blindLink">
-                                      <NextLink href={`/blog/${q.url}`}>
+                                      <NextLink href={`/blog/${q.url[batch]}`}>
                                         <FiLink />
                                       </NextLink>
                                     </div>
                                   )}
-                                  {q.status && (
+                                  {q.status[batch] && (
                                     <BsFillCheckCircleFill color="green" />
                                   )}
                                 </div>
