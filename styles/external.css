@@ -18,6 +18,12 @@
   margin-bottom: 30px;
 }
 
+.blindTotal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .blindHeader {
   height: 100%;
   display: flex;

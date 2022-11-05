@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BLIND75_STATUS } from "./Blind75_Status";
 import {
   FaExpandArrowsAlt,
@@ -22,10 +22,27 @@ const BatchTimeLine = [
   { batch: 2, time: "05-11-2022", color: "#76A6F2", barColor: "#FEBF51" },
 ];
 
+const total = 75;
+
 const Blind75 = () => {
   const [headerExpand, setHeaderExpand] = useState(false);
   const [batch, setBatch] = useState(1);
+
   let objectList = Reflect.ownKeys(BLIND75_STATUS) || [];
+  const [current, setCurrent] = useState(0);
+  const getCurrent = () => {
+    setCurrent((_) =>
+      objectList.reduce(
+        (accu, str) =>
+          accu + BLIND75_STATUS[str].filter((b) => b.status[batch]).length,
+        0
+      )
+    );
+  };
+
+  useEffect(() => {
+    getCurrent();
+  }, [batch]);
 
   const getBooleanList = (obj) => {
     const newObject = {};
@@ -64,6 +81,18 @@ const Blind75 = () => {
             className="blindComponent"
             style={{ backgroundColor: BatchTimeLine[batch].color }}
           >
+            <div className="blindTotal">
+              <h1>Total: {`${Math.floor((current / total) * 100)}%`}</h1>
+              <div className="blindProgressBase">
+                <div
+                  className="blindProgress"
+                  style={{
+                    width: `${(current / total) * 100}%`,
+                    backgroundColor: BatchTimeLine[batch].barColor,
+                  }}
+                />
+              </div>
+            </div>
             {Reflect.ownKeys(BLIND75_STATUS).map((cat, idx) => {
               return (
                 <div key={`cat_${idx}`}>
