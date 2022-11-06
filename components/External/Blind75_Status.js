@@ -2,22 +2,22 @@ export const BLIND75_STATUS = {
   "Arrays & Hashing": [
     {
       question: "Contains Duplicate",
-      status: [true, false],
-      url: ["20220522-0100", ""],
+      status: [true, true],
+      url: ["20220522-0100", "20221106-0100"],
       lcUrl: "https://leetcode.com/problems/contains-duplicate/",
       difficulty: 0,
     },
     {
       question: "Valid Anagram",
-      status: [true, false],
-      url: ["20220521-0100", ""],
+      status: [true, true],
+      url: ["20220521-0100", "20221106-0100"],
       lcUrl: "https://leetcode.com/problems/valid-anagram/",
       difficulty: 0,
     },
     {
       question: "Two Sum",
-      status: [true, false],
-      url: ["20220515-0100", ""],
+      status: [true, true],
+      url: ["20220515-0100", "20221106-0100"],
       lcUrl: "https://leetcode.com/problems/two-sum/",
       difficulty: 0,
     },
