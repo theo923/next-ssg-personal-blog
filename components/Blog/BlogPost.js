@@ -40,7 +40,9 @@ const BlogPost = ({ data, httpString }) => {
         <span className="blogPostDate">{data?.date}</span>
       </div>
       <div className="blogPostBreak" />
-      {data?.tags && data?.tags.includes("Blind75") && <Blind75 />}
+      {data?.tags && data?.tags.includes("Blind75") && (
+        <Blind75 tags={data?.tags} />
+      )}
       <div
         className="blogPostContent"
         dangerouslySetInnerHTML={{ __html: httpString }}
