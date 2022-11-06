@@ -18,15 +18,23 @@ const LeetCodeDifficulty = {
 };
 
 const BatchTimeLine = [
-  { batch: 1, time: "15-05-2022", color: "#F5ADAD", barColor: "#008080" },
-  { batch: 2, time: "05-11-2022", color: "#76A6F2", barColor: "#FEBF51" },
+  { batch: 1, time: "Batch_15-05-2022", color: "#F5ADAD", barColor: "#008080" },
+  { batch: 2, time: "Batch_05-11-2022", color: "#76A6F2", barColor: "#FEBF51" },
 ];
 
 const total = 75;
 
-const Blind75 = () => {
+const batchFinder = (tags) => {
+  return (
+    BatchTimeLine.filter((time) => {
+      return tags?.includes(time.time);
+    })[0]?.batch - 1 || 0
+  );
+};
+
+const Blind75 = ({ tags }) => {
   const [headerExpand, setHeaderExpand] = useState(false);
-  const [batch, setBatch] = useState(1);
+  const [batch, setBatch] = useState(batchFinder(tags));
 
   let objectList = Reflect.ownKeys(BLIND75_STATUS) || [];
   const [current, setCurrent] = useState(0);
