@@ -44,15 +44,15 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Encode and Decode Strings",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221108-0100"],
       lcUrl: "https://www.lintcode.com/problem/659/",
       difficulty: 1,
     },
     {
       question: "Longest Consecutive Sequence",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221108-0100"],
       lcUrl: "https://leetcode.com/problems/longest-consecutive-sequence/",
       difficulty: 1,
     },
@@ -60,8 +60,8 @@ export const BLIND75_STATUS = {
   "Two Pointers": [
     {
       question: "Valid Palindrome",
-      status: [true, false],
-      url: ["20220529-0100", ""],
+      status: [true, true],
+      url: ["20220529-0100", "20221108-0100"],
       lcUrl: "https://leetcode.com/problems/valid-palindrome/",
       difficulty: 0,
     },
