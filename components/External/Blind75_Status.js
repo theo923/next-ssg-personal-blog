@@ -67,15 +67,15 @@ export const BLIND75_STATUS = {
     },
     {
       question: "3Sum",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221109-0100"],
       lcUrl: "https://leetcode.com/problems/3sum/",
       difficulty: 1,
     },
     {
       question: "Container with Most Water",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221109-0100"],
       lcUrl: "https://leetcode.com/problems/container-with-most-water/",
       difficulty: 1,
     },
@@ -83,8 +83,8 @@ export const BLIND75_STATUS = {
   "Sliding Window": [
     {
       question: "Best Time to Buy & Sell Stock",
-      status: [true, false],
-      url: ["20220625-0100", ""],
+      status: [true, true],
+      url: ["20220625-0100", "20221109-0100"],
       lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
       difficulty: 0,
     },
