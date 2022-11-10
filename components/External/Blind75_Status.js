@@ -90,16 +90,16 @@ export const BLIND75_STATUS = {
     },
     {
       question: "Longest Substring Without Repeating Characters",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221110-0100"],
       lcUrl:
         "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
       difficulty: 1,
     },
     {
       question: "Longest Repeating Character Replacement",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221110-0100"],
       lcUrl:
         "https://leetcode.com/problems/longest-repeating-character-replacement/",
       difficulty: 1,
@@ -115,8 +115,8 @@ export const BLIND75_STATUS = {
   Stack: [
     {
       question: "Valid Parentheses",
-      status: [true, false],
-      url: ["20220519-0100", ""],
+      status: [true, true],
+      url: ["20220519-0100", "20221110-0100"],
       lcUrl: "https://leetcode.com/problems/valid-parentheses/",
       difficulty: 0,
     },
