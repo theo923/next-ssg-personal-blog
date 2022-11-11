@@ -124,15 +124,15 @@ export const BLIND75_STATUS = {
   "Binary Search": [
     {
       question: "Search Rotated Sorted Array",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221111-0100"],
       lcUrl: "https://leetcode.com/problems/search-in-rotated-sorted-array/",
       difficulty: 1,
     },
     {
       question: "Find Minimum in Rotated Sorted Array",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221111-0100"],
       lcUrl:
         "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
       difficulty: 1,
@@ -141,8 +141,8 @@ export const BLIND75_STATUS = {
   "Linked List": [
     {
       question: "Reverse Linked List",
-      status: [true, false],
-      url: ["20220615-0100", ""],
+      status: [true, true],
+      url: ["20220615-0100", "20221111-0100"],
       lcUrl: "https://leetcode.com/problems/reverse-linked-list/",
       difficulty: 0,
     },
