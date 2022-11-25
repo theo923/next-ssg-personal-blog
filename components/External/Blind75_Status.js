@@ -267,23 +267,23 @@ export const BLIND75_STATUS = {
   Tries: [
     {
       question: "Implement Trie",
-      status: [true, false],
-      url: ["20220618-0100", ""],
+      status: [true, true],
+      url: ["20220618-0100", "20221123-0100"],
       lcUrl: "https://leetcode.com/problems/implement-trie-prefix-tree/",
       difficulty: 1,
     },
     {
       question: "Design Add and Search Word Data Structure",
-      status: [true, false],
-      url: ["20220620-0100", ""],
+      status: [true, true],
+      url: ["20220620-0100", "20221123-0100"],
       lcUrl:
         "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
       difficulty: 1,
     },
     {
       question: "Word Search II",
-      status: [false, false],
-      url: ["", ""],
+      status: [false, true],
+      url: ["", "20221123-0100"],
       lcUrl: "https://leetcode.com/problems/word-search-ii/",
       difficulty: 2,
     },
