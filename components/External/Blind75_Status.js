@@ -300,15 +300,15 @@ export const BLIND75_STATUS = {
   Backtracking: [
     {
       question: "Combination Sum",
-      status: [true, false],
-      url: ["20220614-0100", ""],
+      status: [true, true],
+      url: ["20220614-0100", "20221124-0100"],
       lcUrl: "https://leetcode.com/problems/combination-sum/",
       difficulty: 1,
     },
     {
       question: "Word Search",
-      status: [true, false],
-      url: ["20220619-0100", ""],
+      status: [true, true],
+      url: ["20220619-0100", "20221124-0100"],
       lcUrl: "https://leetcode.com/problems/word-search/",
       difficulty: 1,
     },
@@ -316,8 +316,8 @@ export const BLIND75_STATUS = {
   Graphs: [
     {
       question: "Number of Islands",
-      status: [true, false],
-      url: ["20220611-0100", ""],
+      status: [true, true],
+      url: ["20220611-0100", "20221124-0100"],
       lcUrl: "https://leetcode.com/problems/number-of-islands/",
       difficulty: 1,
     },
