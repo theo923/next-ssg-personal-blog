@@ -29,21 +29,13 @@ const SoftSkills = ({ forwardRef }) => {
           </SetIntersectionObserver>
           <SetIntersectionObserver type={5} direction="right">
             <p className="softSkillsDescription">
-              If you involved in a team, you should uphold Teamwork, this is
-              because <span>Being united is way powerful than individual</span>{" "}
-              - that is what the coach taught us in the first football team
-              practice. Sometimes, it is impossible to be familiar with everyone
-              in the team, because of{" "}
-              <span>different cultures and personalities</span>. In a football
-              match, we are limited to have only 11 members to participate in a
-              competition, which means some members cannot participate
-              eventually. Sometimes, somebody may treat others as opponents.
-              However, everyone in the team share the same goal -{" "}
-              <span>To Win the Match</span>, therefore, we can treat each other{" "}
-              <span>as a good competitor</span> -{" "}
-              <span>
-                To strive for an opportunity as well as To Win the Match
-              </span>
+              One of the most important skills I learned from football was the
+              importance of teamwork. Our coach emphasized that being united as
+              a team was more powerful than any individual effort. In a football
+              match, we were limited to just eleven players, so it was important
+              that we all worked together towards the same goal. Even if we
+              didn't know each other very well, we could treat each other as
+              good competitors and strive for the win together.
             </p>
           </SetIntersectionObserver>
           <SetIntersectionObserver type={3} direction="left">
