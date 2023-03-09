@@ -18,10 +18,10 @@ const SoftSkills = ({ forwardRef }) => {
           </SetIntersectionObserver>
           <SetIntersectionObserver type={3} direction="right">
             <p className="softSkillsDescription">
-              I was playing football when I was studying in secondary school.
-              Instead of precious football memories, there are some technical
-              softskills that I think they could benefit me a lot when working
-              as a team.
+              During my time in secondary school, I spent a lot of time playing
+              football. While I cherish the memories of those games, there were
+              also some valuable soft skills that I picked up that have proven
+              useful in my professional life.
             </p>
           </SetIntersectionObserver>
           <SetIntersectionObserver type={4} direction="left">
