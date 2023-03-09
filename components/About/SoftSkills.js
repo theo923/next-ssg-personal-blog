@@ -56,16 +56,13 @@ const SoftSkills = ({ forwardRef }) => {
           </SetIntersectionObserver>
           <SetIntersectionObserver type={5} direction="right">
             <p className="softSkillsDescription">
-              There are always conflict between Football Team practice and
-              Self-learning. Everyday when we finished a football team practice
-              we should feel tired and not willing to do anything, so homework
-              and revisions are easily being ignored. Therefore, having good
-              organization skills is important.{" "}
-              <span>
-                For me, I will plan a time schedule and to comply with it
-              </span>
-              , which help preventing deadlines and reminding me the important
-              date so that I will not forget. (Exams){" "}
+              Finally, organization was key to balancing my football commitments
+              with my academic studies. After a grueling football practice, it
+              was often tempting to just put off my homework and revision. But
+              by developing good organizational skills, I was able to create a
+              schedule that ensured I had enough time for both football and
+              schoolwork. This helped me to stay on track and avoid missing
+              important deadlines or exams.
             </p>
           </SetIntersectionObserver>
         </div>
