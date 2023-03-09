@@ -91,7 +91,7 @@ const AboutProject = ({ project, direction }) => {
           } `}
         >
           <span>
-            {project?.link.map((link, idx) => (
+            {project?.link?.map((link, idx) => (
               <span
                 key={idx}
                 className={`flex ${
