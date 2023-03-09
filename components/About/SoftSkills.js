@@ -43,20 +43,12 @@ const SoftSkills = ({ forwardRef }) => {
           </SetIntersectionObserver>
           <SetIntersectionObserver type={4} direction="right">
             <p className="softSkillsDescription">
-              In football match, every moves important, which may reverse the
-              overall results in the end. Therefore, in order to work well in a
-              team, teammates should{" "}
-              <span>
-                alway communicate with each other and practice together before
-                the match
-              </span>
-              . Each members should{" "}
-              <span>
-                understand and foresee other's action before they actually move
-              </span>
-              . Therefore, I usually have conversation with my teammates in
-              knowing how they think logically and their thoughts on playing
-              football.
+              Communication was also crucial in football. Every move we made on
+              the field could impact the outcome of the game, so it was
+              essential that we communicated well with each other both on and
+              off the field. By understanding each other's thought process and
+              approach to the game, we could work together more effectively as a
+              team.
             </p>
           </SetIntersectionObserver>
           <SetIntersectionObserver type={4} direction="left">
