@@ -65,6 +65,18 @@ const SoftSkills = ({ forwardRef }) => {
               important deadlines or exams.
             </p>
           </SetIntersectionObserver>
+          <SetIntersectionObserver type={5} direction="left">
+            <h2>- Conclusion</h2>
+          </SetIntersectionObserver>
+          <SetIntersectionObserver type={6} direction="right">
+            <p className="softSkillsDescription">
+              While I may not play football as much as I used to, the soft
+              skills I learned on the field have continued to serve me well in
+              my professional life. By prioritizing teamwork, communication, and
+              organization, I have been able to work more effectively with my
+              colleagues and achieve my goals more efficiently.
+            </p>
+          </SetIntersectionObserver>
         </div>
       </div>
     </>
