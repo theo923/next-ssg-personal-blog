@@ -29,9 +29,6 @@ export const FLance = {
     "Provide browsing with both Chinese & English Languages",
   ],
   id: "0000",
-  link: ["https://jphobbyexpress.com/en"],
-  linkdescription: ["Demo Site"],
-  linkicon: ["Window"],
 };
 
 export const blog = {
